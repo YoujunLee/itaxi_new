@@ -44,9 +44,9 @@
               <dd>
                   <div class="mutliSelect">
                       <ul id="classify">
-                          <li><input type="checkbox" value="전체" checked/>택시+카풀</li>
-                          <li><input type="checkbox" value="택시" />택시</li>
-                          <li><input type="checkbox" value="카풀" />카풀</li>
+                          <li><label><input type="radio" name="classfy_radio" value="전체" checked/>택시+카풀</label></li>
+                          <li><label><input type="radio" name="classfy_radio" value="택시" />택시</label></li>
+                          <li><label><input type="radio" name="classfy_radio" value="카풀" />카풀</label></li>
                       </ul>
                   </div>
               </dd>
@@ -65,9 +65,13 @@
                 <dd>
                     <div class="mutliSelect">
                         <ul id="departure">
-                            <li><input type="checkbox" value="Apple" checked/>전체</li>
-                            <li><input type="checkbox" value="Apple" />한동대학교</li>
-                            <li><input type="checkbox" value="Blackberry" />포항역</li>
+                            <li><label><input type="radio" name="departure_radio" value="전체" checked/></label>전체</li>
+                            <li><label><input type="radio" name="departure_radio" value="한동대학교" />한동대학교</label></li>
+                            <li><label><input type="radio" name="departure_radio" value="포항역" />포항역</label></li>
+                            <li><label><input type="radio" name="departure_radio" value="양덕" />양덕</label></li>
+                            <li><label><input type="radio" name="departure_radio" value="고속버스터미널" />고속터미널</label></li>
+                            <li><label><input type="radio" name="departure_radio" value="시외버스터미널" />시외버스터미널</label></li>
+                            <li><label><input type="radio" name="departure_radio" value="육거리" />육거리</label></li>
                         </ul>
                     </div>
                 </dd>
@@ -86,15 +90,18 @@
                 <dd>
                     <div class="mutliSelect">
                         <ul id="arrival">
-                            <li><input type="checkbox" value="Apple" checked/>전체</li>
-                            <li><input type="checkbox" value="Apple" />한동대학교</li>
-                            <li><input type="checkbox" value="Blackberry" />포항역</li>
+                          <li><label><input type="radio" name="arrival_radio" value="전체" checked/>전체</label></li>
+                          <li><label><input type="radio" name="arrival_radio" value="한동대학교" />한동대학교</label></li>
+                          <li><label><input type="radio" name="arrival_radio" value="포항역" />포항역</label></li>
+                          <li><label><input type="radio" name="arrival_radio" value="양덕" />양덕</label></li>
+                          <li><label><input type="radio" name="arrival_radio" value="고속버스터미널" />고속터미널</label></li>
+                          <li><label><input type="radio" name="arrival_radio" value="시외버스터미널" />시외버스터미널</label></li>
+                          <li><label><input type="radio" name="arrival_radio" value="육거리" />육거리</label></li>
                         </ul>
                     </div>
                 </dd>
             </dl>    
-          </div>
-          
+          </div> 
     </div>
   </div>
 
@@ -154,10 +161,10 @@ function getSelectedValue(id) {
 
 
 
-$('.mutliSelect input[type="checkbox"]').on('click', function(e) {
+$('.mutliSelect input[type="radio"]').on('click', function(e) {
 
-  var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
-    title = $(this).val() + ",";
+  var title = $(this).closest('.mutliSelect').find('input[type="radio"]').val(),
+    title = $(this).val();
   var $clicked = $(e.target);
   
   var $parent_target=$clicked.parents('.dropdown').children('dt').children('a').children('.multiSel');
@@ -166,6 +173,7 @@ $('.mutliSelect input[type="checkbox"]').on('click', function(e) {
 
   if ($(this).is(':checked')) {
     var html = '<span title="' + title + '">' + title + '</span>';
+    $($parent_target.children('span')).remove();
     $($parent_target).append(html);
     $($parent_hide).hide();
   } else {
