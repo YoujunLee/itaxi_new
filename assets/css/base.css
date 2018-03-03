@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+* { margin:0; padding:0; }
+html,body { font-family:'Nanum','malgun gothic',"돋움", dotum,  Tahoma, Arial, Verdana, Helvetica, AppleGothic, Sans-serif;}
+
+* html body { behavior:url(/css/csshover.htc); }
+/* ---------------------
+base
+---------------------- */
+
+#wrap{
+	width:100%;
+}
+BODY {
+	scrollbar-face-color:#ddd;    /*[실제로 움직이는 바 색상]*/
+	scrollbar-shadow-color:#DEDEDE;    /*[바의 그림자 색상]*/
+	scrollbar-highlight-color:#DEDEDE;  /*  [바의 왼쪽 위의 얇은 선 색상]*/
+	scrollbar-3dlight-color:#FFFFFF;    /*[화살표 부분의 바깥 테두리 색상]*/
+	scrollbar-darkshadow-color:#FFFFFF;  /*  [바의 오른쪽 아래 얇은 색상]*/
+	scrollbar-track-color:#f7f7f7;   /* [바가 없는 부분(트랙)의 색상]*/
+	scrollbar-arrow-color:#DEDEDE;  /* [화살표 색상]*/
+	background-color:#ffffff;
+	
+	color:#4b4b4b; font-family:'Nanum Gothic','malgun gothic','맑은 고딕',"돋움", dotum, Tahoma, Arial, Verdana, Helvetica, AppleGothic, Sans-serif;  
+	LINE-HEIGHT: 18px; font-size:12px; letter-spacing:-0.5px;
+	margin:0px 0px 0 0px; padding:0;
+	overflow-y:scroll;
+}
+
+
+/* default */
+
+body, div, p, ul, li,ol, table, th, td, textarea, input, span, form, h1, h2, h3, h4, h5, h6, dt, dl, dd, em, sup {padding:0px;margin:0px;vertical-align:top}
+ul, ol, dl, dd, dt, li {list-style-type:none}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+form, fieldset{margin:0;padding:0;border:0}
+table, tbody, tfoot, thead, tr, th, td {border-collapse:collapse;border-spacing:0;}
+img {border:0;vertical-align:top;outline:none}
+optgroup {font-style:normal;font-size:0px;height:0px;line-height:0px}
+input {margin:0;vertical-align:middle;color:#888;}
+button{outline:none;}
+select {margin:0;vertical-align:middle;color:#888}
+em,address{font-style:normal;}
+label {cursor:pointer;}
+img, fieldset {border:0 none transparent;/*'transparent' for Opera7*/}
+i, em {font-style:normal;}
+caption,.skip{visibility:hidden;width:0px;height:0px;overflow:hidden;font-size:0px;margin:0px;padding:0px;line-height:0px; text-indent:-5000px;}
+legend{position:absolute;top:0;left:0;visibility:hidden;width:0px;height:0px;overflow:hidden;font-size:0px;margin:0px;padding:0px;line-height:0px}
+/* html5 ie9 else */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+   display:block;
+   padding:0;
+   margin:0
+}
+
+.png24 {tmp:expression(setPng24(this));}
+
+/* hr, legend {display:none;} */
+
+@media print {.noprint { display:none; }}
+
+a {color:#2a2a2a; text-decoration:none;cursor:pointer; outline:none;}
+a:hover {
+	/*color:#1281b5;*/
+	text-decoration:none;
+}
+a.hover:hover{
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity:0.7;
+	opacity:0.7;
+	}
+a:visited{/*color:#1281b5;*/ text-decoration:none;}
+a:active{text-decoration:none;}
+a:link{text-decoration:none;}
+a.hyperLink{color:#00c;text-decoration:underline;cursor:pointer;}
+a.hyperLink.my{color:#fff;text-decoration:underline;cursor:pointer;}
+
+
+.cl { clear:both; }
+.bold { font-weight:bold; }
+/*	text-align styles
+-------------------------------------------------------------------*/
+.center	{ text-align: center !important; }
+.left {	text-align: left !important; }
+.right { text-align: right !important; }
+.middle { vertical-align: middle !important; }
+.top { vertical-align: top !important; }
+table.top th, table.top td{vertical-align: top !important;}
+
+.pointer {
+	cursor:pointer;
+}

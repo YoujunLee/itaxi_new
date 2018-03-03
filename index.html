@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="./assets/css/base.css" rel="stylesheet"> 
+    <link href="./assets/css/style.css" rel="stylesheet"> 
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>   
+    <script src="./assets/js/post_json.js"></script>
+
+
+  </head>
+
+<body>
+  <header>
+    <div class="header_center">
+      <h1 class="Logo_group">
+        <ul class="texts">
+          <li><a href="/index"><img src="./assets/img/logo_big.png" alt="로고"></a></li>
+          <li class="explain">한동대학교 택시 카풀 서비스</li>
+        </ul>
+      </h1>
+     
+      <nav>
+        <ul class="head_gnb">     
+          <li class="title list"><a href="./make_room.html"  routerLinkActive="active">등록</a></li>
+          <li class="title list"><a routerLink=""  routerLinkActive="active">내정보</a></li>
+          <li class="title list"><a href="#" data-toggle="modal" data-target="#loginModal">설정</a></li>                   
+          <li><a href="#" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Login</span></p></a></li>                 
+        </ul>
+      </nav>
+    </div>	   
+  </header> 
+ 
+<div class="container">
+    <div class="list_container">
+        
+      <div id="classify" class="title">  
+          <dl class="dropdown"> 
+            <dt>
+              <a id="classify" href="#">
+                <span class="hida">구분</span>    
+                <p class="multiSel"></p>  
+              </a>
+              </dt>
+            
+              <dd>
+                  <div class="mutliSelect">
+                      <ul id="classify">
+                          <li><input type="checkbox" value="Apple" checked/>택시+카풀</li>
+                          <li><input type="checkbox" value="Apple" />택시</li>
+                          <li><input type="checkbox" value="Blackberry" />카풀</li>
+                      </ul>
+                  </div>
+              </dd>
+          </dl>    
+        </div>
+
+        <div id="departure" class="title">  
+            <dl class="dropdown"> 
+              <dt>
+                <a href="#" id="departure">
+                  <span class="hida">출발지</span>    
+                  <p class="multiSel"></p>  
+                </a>
+                </dt>
+              
+                <dd>
+                    <div class="mutliSelect">
+                        <ul id="departure">
+                            <li><input type="checkbox" value="Apple" checked/>전체</li>
+                            <li><input type="checkbox" value="Apple" />한동대학교</li>
+                            <li><input type="checkbox" value="Blackberry" />포항역</li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>    
+          </div>
+
+          <div class="title">  
+            <dl class="dropdown"> 
+              <dt>
+                <a href="#" id="arrival">
+                  <span class="hida">도착지</span>    
+                  <p class="multiSel"></p>  
+                </a>
+                </dt>
+              
+                <dd>
+                    <div class="mutliSelect">
+                        <ul id="arrival">
+                            <li><input type="checkbox" value="Apple" checked/>전체</li>
+                            <li><input type="checkbox" value="Apple" />한동대학교</li>
+                            <li><input type="checkbox" value="Blackberry" />포항역</li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>    
+          </div>
+          
+    </div>
+  </div>
+
+  <div class="card_area">
+    <div class="card_container">
+      <ul>
+      <div id="tree"></div>
+      </ul> 
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+<script>
+  /*
+	Dropdown with Multiple checkbox select with jQuery - May 27, 2013
+	(c) 2013 @ElmahdiMahmoud
+	license: https://www.opensource.org/licenses/mit-license.php
+*/
+
+$(".dropdown dt a"+"#classify").on('click', function() {
+  $(".dropdown dd ul"+"#classify").slideToggle('fast');
+  this.id="arrival_cop";
+});
+
+$(".dropdown dt a"+"#departure").on('click', function() {
+  $(".dropdown dd ul"+"#departure").slideToggle('fast');
+  this.id="arrival_cop";
+});
+
+$(".dropdown dt a"+"#arrival").on('click', function() {
+  $(".dropdown dd ul"+"#arrival").slideToggle('fast');
+  $(this).parents().siblings('dd').addClass('open');
+  console.log($(this).parents().siblings('dd'));
+});
+
+
+$(document).bind('click', function(e) {
+  var $clicked = $(e.target);
+  if ($clicked.parents().hasClass("dropdown")){
+   
+    if($clicked.parents().siblings('dd').hasClass('open')){  
+      $(".dropdown dd ul"+"#departure").hide();
+    }
+  }
+  
+});
+
+$('.mutliSelect input[type="checkbox"]').on('click', function() {
+
+  var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+    title = $(this).val() + ",";
+
+  if ($(this).is(':checked')) {
+    var html = '<span title="' + title + '">' + title + '</span>';
+    $('.multiSel').append(html);
+    $(".hida").hide();
+  
+  } else {
+    $('span[title="' + title + '"]').remove();
+    var ret = $(".hida");
+    $('.dropdown dt a').append(ret);
+
+  }
+});
+</script>
+</html>

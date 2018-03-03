@@ -1,0 +1,172 @@
+@import url('../fonts/nanumgothic.css');
+@import "base.css";
+@import "fonts.css";
+@import "sub.css";
+
+#wrap{
+	width:100%;
+}
+BODY {
+	scrollbar-face-color:#ddd;    /*[실제로 움직이는 바 색상]*/
+	scrollbar-shadow-color:#DEDEDE;    /*[바의 그림자 색상]*/
+	scrollbar-highlight-color:#DEDEDE;  /*  [바의 왼쪽 위의 얇은 선 색상]*/
+	scrollbar-3dlight-color:#FFFFFF;    /*[화살표 부분의 바깥 테두리 색상]*/
+	scrollbar-darkshadow-color:#FFFFFF;  /*  [바의 오른쪽 아래 얇은 색상]*/
+	scrollbar-track-color:#f7f7f7;   /* [바가 없는 부분(트랙)의 색상]*/
+	scrollbar-arrow-color:#DEDEDE;  /* [화살표 색상]*/
+	background-color:#ffffff;
+	
+	color:#4b4b4b; font-family:'Nanum Gothic','malgun gothic','맑은 고딕',"돋움", dotum, Tahoma, Arial, Verdana, Helvetica, AppleGothic, Sans-serif;  
+	LINE-HEIGHT: 18px; font-size:12px; letter-spacing:-0.5px;
+	margin:0px 0px 0 0px; padding:0;
+	overflow-y:scroll;
+}
+
+/*헤더*/
+header{width:100%;background:#fff;height:58px;box-shadow:0 0 2px #525252;position:fixed;left:0px;top:0px;z-index:999;}
+.header_center{width:96%;margin:0 auto;position:relative;height:58px;}
+
+.Back_iphone{display:none;}
+
+.Logo_group{float:left; padding-top:10px; width:auto;}
+.Logo_group .simbol{display:block; float:left; margin-right:1px; padding-top:6px;}
+.Logo_group .simbol a{display:block; outline:none;}
+.Logo_group .simbol img{width:31px; height:auto;}
+.Logo_group .texts{float:left; margin-left:3px;}
+.Logo_group .texts li{font-size:16px; padding-top:6px; letter-spacing:0px; float:left;}
+.Logo_group .texts li img{width:82px;}
+.Logo_group .texts .explain{padding-top:3px; color: #585858; font-weight:bold; padding:17px 4px 0px;}
+.Logo_group .texts a{display:block; outline:none;}
+.Logo_group .texts a .mover{display:none;}
+.Logo_group .texts a .over{display:block;  height:auto;}
+header nav{position:absolute; right:0px; top:4px; z-index:999;}
+nav li{float:left; padding:5px 22px; letter-spacing:0.5px; /*background:url('../img/gnb_line.png') no-repeat 0px 17px;*/}
+nav .title{width:120px; padding:5px;}
+nav .list{width:86px;}
+
+nav li:first-child{background:none;}
+nav li:last-child{padding:5px 0px 0px 18px;}
+.head_gnb li a{color: #585858; font-size:1.24em; display:block; padding:5px;  outline:none;  line-height:35px; text-align:center; overflow:hidden;}
+.head_gnb li a:hover{color:#b9dbf2;}
+.head_gnb li a:active{text-decoration:none; color:#fff;}
+.head_gnb li a:visited{text-decoration:none;}
+.head_gnb .my_login{position:relative; cursor: pointer;}
+.head_gnb .myname{font-size:1em; color:#bbddf5; letter-spacing:1px;}
+.head_gnb .myface{display:inline-block; margin-left:5px; margin-top:1px; cursor: pointer;}
+.mess_nsimbol{display:none; position:absolute; top:-10px; right:25px; width:21px; height:21px; background:#ff4200; color:#fff; font-size:0.9em; border-radius:40px; overflow: hidden;
+             -moz-border-radius:40px; -khtml-border-radius:40px; -webkit-border-radius:40px; text-align:center; line-height:21px; z-index:999;}
+.mess_tab_nsimbol{display:none; width:21px; height:21px; background:#ff4200; color:#fff; font-size:0.8em; font-weight:bold; border-radius:40px; overflow: hidden; text-indent:0px;
+             -moz-border-radius:40px; -khtml-border-radius:40px; -webkit-border-radius:40px; text-align:center; line-height:21px; z-index:999;}             
+
+.Login{display:none;position:absolute;left:10px;top:11px;}
+.Login a{display:block;}
+.Login img{width:46px; height:auto;}
+.btn_menu{display:none;}
+.M_Search{display:none; position:absolute; left:10px; top:11px;}
+.M_Search .m_see{display:block;}
+
+.head_gnb .subMenu{display:none; position:absolute; top:48px; padding:6px 2px 6px; background:url('../img/gnb_triangle.png') no-repeat center top; z-index:999;}
+.head_gnb li:hover .subMenu{display:block;}
+.head_gnb .subMenu li{text-align:center; clear:both; background:#4ac0c5; padding:5px; letter-spacing:0px; overflow:hidden;}
+.head_gnb .subMenu li:first-child{padding-top:16px;}
+.head_gnb .subMenu li:last-child{padding-bottom:14px; border-radius:0px 0px 6px 6px;}
+.head_gnb .subMenu li a{font-size:1.2em; height:28px; padding:0px; line-height:29px;}
+.head_gnb .ms01 li{width:104px;}
+.head_gnb .ms02 li{width:104px;}
+.head_gnb .ms03 li{width:122px;}
+.head_gnb .ms04 li{width:122px;}
+.head_gnb .ms05 li{width:122px;}
+.head_gnb .subMenu li a:hover{color:#fff;}
+.head_gnb .ms01{left:-10px;}
+.head_gnb .ms02{left:76px;}
+.head_gnb .ms03{left:240px;}
+.head_gnb .ms04{left:260px;}
+.head_gnb .ms05{left:376px;}
+.head_gnb .alarm{position:relative; width:92px;}
+.head_gnb .alarm .alarm_mark{position:absolute; top:7px; right:14px; width:18px; height:18px; background:url('../img/icon_mess_new.png') no-repeat center top; background-size:100% auto; display:none}
+
+.head_gnb .logined{padding-top:2px;}
+.head_gnb .logined .myname{padding-top:10px; display:inline-block; cursor:pointer; font-size:1.2em; font-weight:bold; letter-spacing:-1px;}
+.my_login.open .dropdown-menu{display:block; min-width:auto; padding:7px 0px;}
+.my_login.open .dropdown-menu li{width:100px; padding:5px;}
+.my_login.open .dropdown-menu li a{line-height:26px; font-size:1em; color:#198ad8; padding:0px;}
+
+.dropdown {	position: relative;}
+  
+
+  
+  .dropdown dd, .dropdown dt {margin: 0px; padding: 0px;}
+  .dropdown ul {margin: -1px 0 0 0;}
+  .dropdown dd {position: relative;}
+  .dropdown a,.dropdown a:visited {color: #000; text-decoration: none; outline: none;	font-size: 12px; }
+  .dropdown dt a {
+	/* background-color: #fff; */
+	display: block;
+	padding: 8px 20px 5px 10px;
+	min-height: 25px;
+	line-height: 24px;
+	overflow: hidden;
+	border: 0;
+	}
+  
+  .dropdown dt a span,
+  .multiSel span {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 3px 2px 0;
+  }
+  
+  .dropdown dd ul {
+	background-color: #fff;
+	border: 0;
+	color: #000;
+	display: none;
+	left: 0px;
+	padding: 2px 15px 2px 5px;
+	position: absolute;
+	top: 2px;
+	width: 280px;
+	list-style: none;
+	height: 100px;
+	overflow: auto;
+  }
+  
+  .dropdown span.value {
+	display: none;
+  }
+  
+  .dropdown dd ul li a {
+	padding: 5px;
+	display: block;
+  }
+  
+  .dropdown dd ul li a:hover {
+	background-color: #fff;
+  }
+
+.container{width:100%; background: #f7f7f7; box-shadow:0 0 2px #525252;  height:41px; top:58px; position:fixed; z-index: 998; left:0px;}
+.list_container{width:96%; margin:0 auto; position:relative; }
+.list_container .title{cursor:pointer; position: relative; left: 0; line-height: 41px; margin-right: 20px; float: left;}
+.list_container .title .name{font-size: 13px; white-space: pre; color: #585858; }
+
+
+.card_area {position: relative; top:99px; width:100%; background-color: #f7f7f7;}
+.card_area .card_container {position: relative; width: 1040px; margin:0 auto; min-height:1200px; z-index:997;}
+.card_area .card_container ul {width:100%;}
+.card_area .card_container li {width:33%; float:left;}
+.card_area .card_container .card {width:300px; height:150px; border: solid 1px #000; margin-left:20px; margin-top:20px; cursor: pointer;background-color:#fff;}
+.card_area .card_container dl {overflow: hidden; height: 40px; line-height: 40px;}
+.card_area .card_container .card .top-left {float: left; margin-left: 10px; font-size: 1.1em; }
+.card_area .card_container .card .top-left .classify{ position: relative; font-size: 1.1em; color: #fff;  background: #198ad8; width:30px; padding: 2px 8px; 
+											z-index: 100; height: 30px; border-radius: 5px; text-align: center; letter-spacing: 0px;}
+.card_area .card_container .card .top-left .people{ font-weight: normal; color: #aeafaf;}
+.card_area .card_container .card .top-right {margin-right:10px; float: right; font-size: 1.1em}
+.card_area .card_container .card .top-right .date {font-weight: normal; color: #aeafaf;}
+.card_area .card_container .card p {text-align: center; font-size:16px; margin:10px;}
+.card_content {margin-top:16px;}
+.arrow {width: 20px;}
+
+.container1 { background-color: #f7f7f7; margin-top:90px; width:100%;}
+.container1 .form_container {position: relative; border:solid; width: 1040px; margin:0 auto;  z-index:997;}
+
+footer{position: fixed; z-index:999;bottom: 0; width:100%; height: 30px; padding-top: 8.5px; padding-bottom: 8.5px; border-top: 1px solid #d1d1d1; background-color: white; text-align: center;}
