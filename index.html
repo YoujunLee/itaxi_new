@@ -3,12 +3,9 @@
 <head>
     <meta charset="utf-8">
     <link href="./assets/css/base.css" rel="stylesheet"> 
-    <link href="./assets/css/style.css" rel="stylesheet"> 
-   
+    <link href="./assets/css/main.css" rel="stylesheet"> 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>   
     <script src="./assets/js/post_json.js"></script>
-
-
   </head>
 
 <body>
@@ -47,9 +44,9 @@
               <dd>
                   <div class="mutliSelect">
                       <ul id="classify">
-                          <li><input type="checkbox" value="Apple" checked/>택시+카풀</li>
-                          <li><input type="checkbox" value="Apple" />택시</li>
-                          <li><input type="checkbox" value="Blackberry" />카풀</li>
+                          <li><input type="checkbox" value="전체" checked/>택시+카풀</li>
+                          <li><input type="checkbox" value="택시" />택시</li>
+                          <li><input type="checkbox" value="카풀" />카풀</li>
                       </ul>
                   </div>
               </dd>
@@ -114,55 +111,67 @@
   </footer>
 </body>
 <script>
-  /*
-	Dropdown with Multiple checkbox select with jQuery - May 27, 2013
-	(c) 2013 @ElmahdiMahmoud
-	license: https://www.opensource.org/licenses/mit-license.php
-*/
-
 $(".dropdown dt a"+"#classify").on('click', function() {
   $(".dropdown dd ul"+"#classify").slideToggle('fast');
-  this.id="arrival_cop";
+  $(this).parents().siblings('dd').addClass('open_classify');
 });
 
 $(".dropdown dt a"+"#departure").on('click', function() {
   $(".dropdown dd ul"+"#departure").slideToggle('fast');
-  this.id="arrival_cop";
+  $(this).parents().siblings('dd').addClass('open_departure');
 });
 
 $(".dropdown dt a"+"#arrival").on('click', function() {
   $(".dropdown dd ul"+"#arrival").slideToggle('fast');
-  $(this).parents().siblings('dd').addClass('open');
-  console.log($(this).parents().siblings('dd'));
+  $(this).parents().siblings('dd').addClass('open_arrival');
 });
-
 
 $(document).bind('click', function(e) {
   var $clicked = $(e.target);
   if ($clicked.parents().hasClass("dropdown")){
-   
-    if($clicked.parents().siblings('dd').hasClass('open')){  
+    
+    if($clicked.parents().siblings('dd').hasClass('open_classify')){
+      $(".dropdown dd ul"+"#arrival").hide();
       $(".dropdown dd ul"+"#departure").hide();
-    }
+    }else if($clicked.parents().siblings('dd').hasClass('open_departure')){
+      $(".dropdown dd ul"+"#arrival").hide();
+      $(".dropdown dd ul"+"#classify").hide();
+    }else if($clicked.parents().siblings('dd').hasClass('open_arrival')){  
+      $(".dropdown dd ul"+"#departure").hide();
+      $(".dropdown dd ul"+"#classify").hide();
+   }
   }
   
 });
 
-$('.mutliSelect input[type="checkbox"]').on('click', function() {
+$(".dropdown dd ul li a").on('click', function() {
+  $(".dropdown dd ul").hide();
+});
+
+function getSelectedValue(id) {
+  return $("#" + id).find("dt a span.value").html();
+}
+
+
+
+$('.mutliSelect input[type="checkbox"]').on('click', function(e) {
 
   var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
     title = $(this).val() + ",";
+  var $clicked = $(e.target);
+  
+  var $parent_target=$clicked.parents('.dropdown').children('dt').children('a').children('.multiSel');
+  var $parent_hide=$clicked.parents('.dropdown').children('dt').children('a').children('.hida');
+  
 
   if ($(this).is(':checked')) {
     var html = '<span title="' + title + '">' + title + '</span>';
-    $('.multiSel').append(html);
-    $(".hida").hide();
-  
+    $($parent_target).append(html);
+    $($parent_hide).hide();
   } else {
     $('span[title="' + title + '"]').remove();
     var ret = $(".hida");
     $('.dropdown dt a').append(ret);
-
   }
 });
 </script>
