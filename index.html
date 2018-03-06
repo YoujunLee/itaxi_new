@@ -4,11 +4,98 @@
     <meta charset="utf-8">
     <link href="./assets/css/base.css" rel="stylesheet"> 
     <link href="./assets/css/main.css" rel="stylesheet"> 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>   
+    <link href="./assets/css/materialize.css" rel="stylesheet"> 
+    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/materialize.js"></script>
     <script src="./assets/js/post_json.js"></script>
   </head>
 
 <body>
+
+    <!-- The Modal (contains the Sign Up form) -->
+<div id="modal1"  class="modal">
+   <div class="modal-content">
+    <h1>카풀 생성</h1>
+    <form class="form" action="http://52.78.208.153/assets/php/make_room.php" method="post">
+      <div id="classify" class= "row col s12">
+        <div class="col s3"></div>
+         <div id="class" class="col s6">
+          <div class="switch-field">
+            <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
+            <label for="switch_left">택시</label>
+            <input type="radio" id="switch_right" name="switch_2" value="no" />
+            <label for="switch_right">자차</label>
+          </div>
+        </div>
+        <div class="col s3"></div>
+      </div>
+
+      <div id="departure" class= "row col s12">
+        <div class="col s3"></div>
+         <div class="input-field col s6">
+            <select name="departure">
+              <option value="" disabled selected>출발지를 선택해주세요.</option>
+              <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
+              <option value="포항역">포항역</option>
+              <option value="채플">채플</option>
+            </select>
+        </div>
+        <div class="col s3"></div>
+      </div>
+
+      <div id="arrival" class= "row col s12">
+          <div class="col s3"></div>
+          <div class="input-field col s6">
+              <select name="arrival">
+                <option value="" disabled selected>도착지를 선택해주세요.</option>
+                <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
+                <option value="포항역">포항역</option>
+                <option value="채플">채플</option>
+              </select>
+          </div>
+          <div class="col s3"></div>
+        </div>
+        
+        <div id="date" class= "row col s12">
+            <div class="col s3"></div>
+            <div class="input-field col s6">
+                <input type="date" name="date" class="datepicker" placeholder="날짜를 선택해주세요.">
+            </div>
+            <div class="col s3"></div>
+          </div>
+        
+          <div id="time" class= "row col s12">
+              <div class="col s3"></div>
+              <div class="input-field col s6">
+                  <input type="text" name="time" class="timepicker" placeholder="시간을 선택해주세요.">
+              </div>
+              <div class="col s3"></div>
+            </div>
+          
+            <div id="population" class= "row col s12">
+              <div class="col s3"></div>
+                <div class="input-field col s6">
+                    <input type="tel" name="population" maxlength="1" placeholder="탑승 인원을 선택해주세요.">
+                </div>
+              <div class="col s3"></div>
+            </div>
+
+            
+            <div class= "row col s12">
+                <div class="col s3"></div>
+                  <div class="col s6">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                </div>
+                  </div>
+                <div class="col s3"></div>
+              </div>
+            </form>
+          </div>
+  </div>
+
+
+
+  
   <header>
     <div class="header_center">
       <h1 class="Logo_group">
@@ -20,7 +107,7 @@
      
       <nav>
         <ul class="head_gnb">     
-          <li class="title list"><a href="./make_room.html"  routerLinkActive="active">등록</a></li>
+          <li class="title list"><a class="waves-effect waves-light btn modal-trigger" href="#modal1"  routerLinkActive="active">등록</a></li>
           <li class="title list"><a routerLink=""  routerLinkActive="active">내정보</a></li>
           <li class="title list"><a href="#" data-toggle="modal" data-target="#loginModal">설정</a></li>                   
           <li><a href="#" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Login</span></p></a></li>                 
@@ -28,6 +115,9 @@
       </nav>
     </div>	   
   </header> 
+
+ 
+
  
 <div class="container">
     <div class="list_container">
@@ -166,8 +256,6 @@ function getSelectedValue(id) {
   return $("#" + id).find("dt a span.value").html();
 }
 
-
-
 $('.mutliSelect input[type="radio"]').on('click', function(e) {
 
   var title = $(this).closest('.mutliSelect').find('input[type="radio"]').val(),
@@ -201,10 +289,7 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) 
       w3AddClass(x[i], "show");
- 
-    
   }
-
 }
 
 // Show filtered elements
@@ -232,16 +317,38 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// // Add active class to the current control button (highlight it)
-// var btnContainer = document.getElementById("myBtnContainer");
-// var btns = btnContainer.getElementsByClassName("btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+  $(document).ready(function() {
+      $('select').material_select();
+    });
+
+    $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+
+  $('.timepicker').pickatime({
+    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+    twelvehour: false, // Use AM/PM or 24-hour format
+    donetext: 'OK', // text for done-button
+    cleartext: 'Clear', // text for clear-button
+    canceltext: 'Cancel', // Text for cancel-button
+    autoclose: false, // automatic close timepicker
+    ampmclickable: true, // make AM PM clickable
+    aftershow: function(){} //Function for after opening timepicker
+  });
+/*----------------------------------*/
+// Get the modal
+$(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+  $('#modal1').modal('open');
+  $('#modal1').modal('close');
 
 </script>
 </html>

@@ -29,17 +29,17 @@
         var hr = $("<hr>").appendTo(card);
 
         var card_content = $("<div class='card_content'>").appendTo(card);
-        var departure=$("<p >").appendTo(card_content);
-        var img=$("<p ><img class='arrow' src='./assets/img/arrow.png' alt='화살표'></p>").appendTo(card_content);
-        var arrival=$("<p>").appendTo(card_content);
+        var img=$("<img class='arrow' src='./assets/img/process.png' alt='화살표'>").appendTo(card_content);
+        var departure=$("<p class='destination'>").appendTo(card_content);
+        var arrival=$("<p class='destination'>").appendTo(card_content);
         console.log(departure.parents('li'));
         /*departure*/
         if(data[index][2]=="한동대학교"){
           departure.parents('li').addClass('handong');
-          departure.html(data[index][2]);
+          departure.html("출발지: "+data[index][2]);
         }else if(data[index][2]=="포항역"){
           departure.parents('li').addClass('pohang');
-          departure.html(data[index][2]);
+          departure.html("출발지: "+data[index][2]);
         }else if(data[index][2]=="양덕"){
           departure.parents('li').addClass('yangduck');
           departure.html(data[index][2]);  
