@@ -101,21 +101,19 @@ $(document).ready(function(){
 });
 
 
-   /* $(".provisionOne").click(function(){
-        $("provision_01").show(50);
-    });
-    $(".btn_provision_colse").click(function(){
-        $(".provision_01").hide(50);
-    });
-    $(".provisionTwo").click(function(){
-        $("provision_02").show(50);
-    });
-    $(".btn_provision_colse").click(function(){
-        $(".provision_02").hide(50);
-    });
-    $(".contacUs").click(function(){
-        $("provision_03").show(50);
-    });
-    $(".btn_provision_colse").click(function(){
-        $(".provision_03").hide(50);
-    });*/
+	
+	$(function(){ var $win = $(window); var top = $(window).scrollTop(); // 현재 스크롤바의 위치값을 반환합니다. /*사용자 설정 값 시작*/ 
+	var speed = 500; // 따라다닐 속도 : "slow", "normal", or "fast" or numeric(단위:msec) 
+	var easing = 'linear'; // 따라다니는 방법 기본 두가지 linear, swing 
+	var $layer = $('.float_sidebar'); // 레이어 셀렉팅 
+	var layerTopOffset = 0; // 레이어 높이 상한선, 단위:px 
+	
+	if (top > 0 ) $win.scrollTop(layerTopOffset+top); else $win.scrollTop(0); //스크롤이벤트가 발생하면 
+	
+		$(window).scroll(function(){ 
+			yPosition = $win.scrollTop(); //이부분을 조정해서 화면에 보이도록 맞추세요 
+			if (yPosition < 0) { yPosition = 0; } 
+			$layer.animate({"top":yPosition }, 
+			{duration:speed, easing:easing, queue:false}); 
+		}); 
+	});
