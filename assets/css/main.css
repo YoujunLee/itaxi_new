@@ -21,24 +21,23 @@ BODY {
 	margin:0px 0px 0 0px; padding:0;
 	overflow-y:scroll;
 }
+.mobile_nav_off {display: inline-block;}
+.mobile_nav_on {display: none;}
+header nav button.btn_mobile_nav{display: none;}
 
 /*헤더*/
+@media screen and (max-width: 1920px) {
 header{width:100%;background:#fff;height:58px;box-shadow:0 0 2px #525252;position:fixed;left:0px;top:0px;z-index:999;}
 .header_center{width:96%;margin:0 auto;position:relative;height:58px;}
 
 .Back_iphone{display:none;}
 
 .Logo_group{float:left; padding-top:10px; width:auto;}
-.Logo_group .simbol{display:block; float:left; margin-right:1px; padding-top:6px;}
-.Logo_group .simbol a{display:block; outline:none;}
-.Logo_group .simbol img{width:31px; height:auto;}
 .Logo_group .texts{float:left; margin-left:3px;}
 .Logo_group .texts li{font-size:16px; padding-top:6px; letter-spacing:0px; float:left;}
 .Logo_group .texts li img{width:82px;}
 .Logo_group .texts .explain{padding-top:3px; color: #585858; font-weight:bold; padding:17px 4px 0px;}
-.Logo_group .texts a{display:block; outline:none;}
-.Logo_group .texts a .mover{display:none;}
-.Logo_group .texts a .over{display:block;  height:auto;}
+
 header nav{position:absolute; right:0px; top:4px; z-index:999;}
 nav li{float:left; padding:5px 22px; letter-spacing:0.5px; /*background:url('../img/gnb_line.png') no-repeat 0px 17px;*/}
 nav .title{width:120px; padding:5px;}
@@ -50,10 +49,15 @@ nav li:last-child{padding:5px 0px 0px 18px;}
 .head_gnb li a:hover{color:#b9dbf2;}
 .head_gnb li a:active{text-decoration:none; color:#fff;}
 .head_gnb li a:visited{text-decoration:none;}
-.head_gnb .my_login{position:relative; cursor: pointer;}
+}
+
+
+
+
+/*.head_gnb .my_login{position:relative; cursor: pointer;}
 .head_gnb .myname{font-size:1em; color:#bbddf5; letter-spacing:1px;}
 .head_gnb .myface{display:inline-block; margin-left:5px; margin-top:1px; cursor: pointer;}
-.mess_nsimbol{display:none; position:absolute; top:-10px; right:25px; width:21px; height:21px; background:#ff4200; color:#fff; font-size:0.9em; border-radius:40px; overflow: hidden;
+ .mess_nsimbol{display:none; position:absolute; top:-10px; right:25px; width:21px; height:21px; background:#ff4200; color:#fff; font-size:0.9em; border-radius:40px; overflow: hidden;
              -moz-border-radius:40px; -khtml-border-radius:40px; -webkit-border-radius:40px; text-align:center; line-height:21px; z-index:999;}
 .mess_tab_nsimbol{display:none; width:21px; height:21px; background:#ff4200; color:#fff; font-size:0.8em; font-weight:bold; border-radius:40px; overflow: hidden; text-indent:0px;
              -moz-border-radius:40px; -khtml-border-radius:40px; -webkit-border-radius:40px; text-align:center; line-height:21px; z-index:999;}             
@@ -89,7 +93,7 @@ nav li:last-child{padding:5px 0px 0px 18px;}
 .head_gnb .logined .myname{padding-top:10px; display:inline-block; cursor:pointer; font-size:1.2em; font-weight:bold; letter-spacing:-1px;}
 .my_login.open .dropdown-menu{display:block; min-width:auto; padding:7px 0px;}
 .my_login.open .dropdown-menu li{width:100px; padding:5px;}
-.my_login.open .dropdown-menu li a{line-height:26px; font-size:1em; color:#198ad8; padding:0px;}
+.my_login.open .dropdown-menu li a{line-height:26px; font-size:1em; color:#198ad8; padding:0px;} */
 
 .dropdown {	position: relative;}
 .dropdown dd, .dropdown dt {margin: 0px; padding: 0px;}
@@ -167,3 +171,45 @@ footer{position: fixed; z-index:999;bottom: 0; width:100%; height: 30px; padding
 #class .switch-field label:last-of-type { border-radius: 0 4px 4px 0;}
 
 * {box-sizing: border-box}
+/*mobile size*/
+@media screen and (max-width:500px) {
+  header{width:100%;background:#fff;height:58px;box-shadow:0 0 2px #525252;position:fixed;left:0px;top:0px;z-index:999;}
+  .header_center{width:96%;margin:0 auto;position:relative;height:58px;}
+  
+  .Logo_group{float:left; padding-top:10px; width:auto;}
+  .Logo_group .texts{float:left; margin-left:3px;}
+  .Logo_group .texts li{font-size:16px; padding-top:6px; letter-spacing:0px; float:left;}
+  .Logo_group .texts li img{width:82px;}
+  .Logo_group .texts .explain{display:none;}
+  
+  header nav li{display:none;}
+  header nav button.btn_mobile_nav{display:block; width: 32px; height: 32px; border:#999 2px solid;  border-radius:45px; line-height: 4px; color:#746f77;}
+  
+  .mobile_nav_off {display: none;}
+  .mobile_nav_on {display: inline-block;}
+  header nav img {width:auto; height: 25px;}
+  
+  nav li:first-child{background:none;}
+  nav li:last-child{padding:5px 0px 0px 18px;}
+  .head_gnb li a{color: #585858; font-size:1.24em; display:block; padding:5px;  outline:none;  line-height:35px; text-align:center; overflow:hidden;}
+  .head_gnb li a:hover{color:#b9dbf2;}
+  .head_gnb li a:active{text-decoration:none; color:#fff;}
+  .head_gnb li a:visited{text-decoration:none;}
+
+  .card_area {position: relative; top:99px; width:100%; background-color: #f7f7f7;}
+  .card_area .card_container {position: relative; width:calc(100%); min-height: 1200px;  z-index:997;}
+  .card_area .card_container ul {width:100%;}
+  .card_area .card_container li {width:100%; float:left;}
+  .card_area .card_container .card {width:90%; height:120px; border: solid 1px #000; margin:5px; margin-left:20px; cursor: pointer;background-color:#fff;}
+  .card_area .card_container dl {overflow: hidden; height: 40px; line-height: 40px;}
+  .card_area .card_container .card .top-left {float: left; margin-left: 10px; font-size: 1.1em; }
+  .card_area .card_container .card .top-left .classify{ position: relative; font-size: 1.1em; color: #fff;  background: #198ad8; width:30px; padding: 2px 8px; 
+                        z-index: 100; height: 30px; border-radius: 5px; text-align: center; letter-spacing: 0px;}
+  .card_area .card_container .card .top-left .people{ font-weight: normal; color: #aeafaf;}
+  .card_area .card_container .card .top-right {margin-right:10px; float: right; font-size: 1.1em}
+  .card_area .card_container .card .top-right .date {font-weight: normal; color: #aeafaf;}
+  .card_area .card_container .card .card_content img {position: absolute; height:50px; }
+  .card_area .card_container .card .card_content p { font-size:16px; margin-left:35px; margin-bottom:12px;}
+  .card_content {margin-top:16px;}
+  
+  }	

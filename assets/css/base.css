@@ -91,3 +91,71 @@ table.top th, table.top td{vertical-align: top !important;}
 .pointer {
 	cursor:pointer;
 }
+
+
+
+.mobile {display: none; cursor: pointer;}
+
+/* ----  media 1920 -----*/
+@media screen and (max-width: 1920px) {
+	
+}
+
+
+
+
+
+
+/* ----  media 1600 -----*/
+@media screen and (max-width: 1600px) {
+}
+
+
+
+/* ----  media 1366 -----*/
+@media screen and (max-width: 1366px) {
+
+
+	
+}
+
+
+
+
+
+/* ----  media 1024 -----*/
+@media screen and (max-width: 1024px) {
+}
+
+
+
+
+
+/* ----  media 900 -----*/
+@media screen and (max-width: 900px) {
+	
+}
+
+
+
+
+@media screen and (max-width: 420px) {
+	/* mobile-reset */
+	body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5; font-family:'Dosis','Quicksand','Noto Sans KR','Malgun Gothic', '맑은 고딕', Arial,sans-serif; } 
+	input,select,textarea,button {font-size:100%;vertical-align:middle}
+	table {border-collapse:collapse;border-spacing:0}
+	body {-webkit-text-size-adjust:none} /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+	input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+	input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+	button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+	input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+	
+	.mobile {position: absolute; display:none; width: 100%; height: 100%; background:rgba(52,49,63,0.92);  z-index: 99999; font-family:'Dosis';}
+	.mobile button {width: 90%; margin: 15px 5% 0; text-align: right; color: #ccc;  font-family:'Noto Sans KR'; font-size: 30px; font-weight: 300;line-height: 30px;}
+	.mobile a{color: #fff; font-weight: 600; }
+	.mobile a:hover{color: #fff; font-weight: 600;}
+	.mobile ul {width: 80%; margin: 1% 10% 10%; font-size: 22px; color: #fff; }
+	.mobile ul h1{font-size: 22px; color: #fff;}
+	.mobile ul li {line-height: 60px; font-weight: 600; }
+	.mobile ul li span {display: block; margin-left: 20px; font-family:'Noto Sans KR';font-weight: 400; font-size: 16px; line-height: 40px; }
+}
