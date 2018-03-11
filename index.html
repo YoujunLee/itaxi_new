@@ -21,7 +21,7 @@
    <div class="modal-content">
     <h1>카풀 생성</h1>
     <form class="form" action="http://52.78.208.153/assets/php/make_room.php" method="post">
-      <!-- <div id="classify" class= "row col s12">
+      <div id="classify" class= "row col s12">
         <div class="col s3"></div>
          <div id="class" class="col s6">
           <div class="switch-field">
@@ -32,17 +32,23 @@
           </div>
         </div>
         <div class="col s3"></div>
-      </div> -->
-
+      </div>
+<!--  TODO input창 초기화-->
       <div id="departure" class= "row col s12">
         <div class="col s3"></div>
          <div class="input-field col s6">
-            <select name="departure">
+            <select id="departure_select" class="departure_select"name="departure">
               <option value="" disabled selected>출발지를 선택해주세요.</option>
               <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
               <option value="포항역">포항역</option>
-              <option value="채플">채플</option>
+              <option value="양덕">양덕</option>
+              <option value="양덕">고속버스터미널</option>
+              <option value="양덕">시외버스터미널</option>
+              <option value="육거리">육거리</option>
+              <option value="직접입력">직접입력</option>
             </select>
+
+            <input type="text" name="departure" class="departure_input hide" placeholder="출발지를 입력해주세요.">
         </div>
         <div class="col s3"></div>
       </div>
@@ -50,12 +56,19 @@
       <div id="arrival" class= "row col s12">
           <div class="col s3"></div>
           <div class="input-field col s6">
-              <select name="arrival">
+              <select id="arrival_select" class="arrival_select" name="arrival">
                 <option value="" disabled selected>도착지를 선택해주세요.</option>
                 <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
                 <option value="포항역">포항역</option>
-                <option value="채플">채플</option>
+                <option value="양덕">양덕</option>
+                <option value="양덕">고속버스터미널</option>
+                <option value="양덕">시외버스터미널</option>
+                <option value="육거리">육거리</option>
+                <option value="직접입력">직접입력</option>
               </select>
+      
+          <input type="text" name="arrival" class="arrival_input hide" placeholder="도착지를 입력해주세요.">
+      
           </div>
           <div class="col s3"></div>
         </div>
@@ -79,7 +92,15 @@
             <div id="population" class= "row col s12">
               <div class="col s3"></div>
                 <div class="input-field col s6">
-                    <input type="tel" name="population" maxlength="1" placeholder="탑승 인원을 선택해주세요.">
+                  <select name="population">
+                    <option value="" disabled selected>본인 포함 탑승 총원을 선택해주세요.</option>
+                    <option value="2">2명</option>
+                    <option value="3">3명</option>
+                    <option value="4">4명</option>
+                    <option value="5">5명</option>
+                    <option value="6">6명</option>
+                    <option value="7">7명</option>
+                  </select>
                 </div>
               <div class="col s3"></div>
             </div>
@@ -120,14 +141,14 @@
       <h1 class="Logo_group">
         <ul class="texts">
           <li><a href="/index"><img src="./assets/img/logo_big.png" alt="로고"></a></li>
-          <li class="explain">한동대학교 택시 카풀 서비스</li>
+          <li class="explain">Handong Global Univ. Taxi Carpool Service</li>
         </ul>
       </h1>
      
       <nav>
         <ul class="head_gnb">     
           <li class="title list"><a class="modal-trigger" href="#modal1"  routerLinkActive="active">등록</a></li>
-          <li class="title list"><a routerLink=""  routerLinkActive="active">내정보</a></li>
+          <li class="title list"><a routerLink="" onclick="formChangeInput()"  routerLinkActive="active">내정보</a></li>
           <li class="title list"><a href="#" data-toggle="modal" data-target="#loginModal">설정</a></li>                   
           <li><a href="#" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Login</span></p></a>   </li>    
         </ul>
@@ -296,6 +317,28 @@ $('.mutliSelect input[type="radio"]').on('click', function(e) {
     $('span[title="' + title + '"]').remove();
     var ret = $(".hida");
     $('.dropdown dt a').append(ret);
+  }
+});
+
+
+
+/*select를 input창으로 바꾸기*/
+$('#departure_select').on('change', function() {
+  var value = $(this).val();
+  console.log( $(this).parent().siblings().hasClass('departure_input'));
+
+  if(value=="직접입력"){
+    $(this).parent('.departure_select').addClass('hide');
+    $(this).parent().siblings('.departure_input').removeClass('hide');
+  }
+});
+
+$('#arrival_select').on('change', function() {
+  var value = $(this).val();
+ 
+  if(value=="직접입력"){
+    $(this).parent('.arrival_select').addClass('hide');
+    $(this).parent().siblings('.arrival_input').removeClass('hide');
   }
 });
 
