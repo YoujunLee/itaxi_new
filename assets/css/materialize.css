@@ -2531,7 +2531,7 @@ video.responsive-video {
   max-width: 100%;
   height: auto;
 }
-
+/* 
 .pagination li {
   display: inline-block;
   border-radius: 2px;
@@ -2583,7 +2583,7 @@ video.responsive-video {
     overflow: hidden;
     white-space: nowrap;
   }
-}
+} */
 
 .breadcrumb {
   font-size: 18px;
