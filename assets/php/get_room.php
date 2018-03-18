@@ -4,7 +4,8 @@ header("Content-Type: text/html; charset=UTF-8");
 require_once './db.php';
 
 $post_id = $_GET['post_id'];
- 
+$return_arr = array();
+
 $db = new DBC;
 $db->DBI();
 $db->query = "SELECT departure, arrival, date, time, population FROM room WHERE id='".$post_id."'";
@@ -13,8 +14,15 @@ $data= $db->result->fetch_row();
 
 $db2 = new DBC;
 $db2->DBI();
-$db->query= "SELECT id, stu_id, name, phone FROM room_user WHERE post_id='".$post_id."'";
+$db2->query= "SELECT id, stu_id, name, phone_num FROM room_user WHERE post_id='".$post_id."'";
+$db2->DBQ();
+$num = $db2->result->num_rows;
 
+$dbdata= array();
+
+while($data2 = $db2->result->fetch_row()){
+  $dbdata[]=$data2;
+}
 
 $row_array['id']=$post_id;
 $row_array['departure']=$data[0];
@@ -23,7 +31,10 @@ $row_array['date']=$data[2];
 $row_array['time']=$data[3];
 $row_array['population']=$data[4];
 
-echo json_encode($row_array);
+array_push($return_arr,$row_array);
+array_push($return_arr,$dbdata);
+
+echo json_encode($return_arr);
 
 $db->DBO();
 ?> 
