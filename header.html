@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link href="./assets/css/base.css" rel="stylesheet"> 
-    <link href="./assets/css/main.css" rel="stylesheet"> 
-    <link href="./assets/css/materialize.css" rel="stylesheet"> 
-   
-    <script src="./assets/js/stylejs.js"></script>
-    <script src="./assets/js/base.js"></script>
 
-    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/materialize.js"></script>
-    <script src="./assets/js/post_json.js"></script>
-</head>
-
-<body>
-
-  
     <!-- The Modal (contains the Sign Up form) -->
 <div id="modal1"  class="modal">
     <div class="modal-content">
@@ -118,7 +99,7 @@
                </div>
              </form>
            </div>
-</div>
+   </div>
  
  <nav class="mobile float_sidebar">
    <button class="btn_mobile_colse">&#9746;</button>
@@ -142,7 +123,7 @@
      <div class="header_center">
        <h1 class="Logo_group">
          <ul class="texts">
-           <li><a href="./index.html"><img src="./assets/img/logo_big.png" alt="로고"></a></li>
+           <li><a href="/index"><img src="./assets/img/logo_big.png" alt="로고"></a></li>
            <li class="explain">Handong Global Univ. Taxi Carpool Service</li>
          </ul>
        </h1>
@@ -150,7 +131,7 @@
        <nav>
          <ul class="head_gnb">     
            <li class="title list"><a class="modal-trigger" href="#modal1"  routerLinkActive="active">등록</a></li>
-           <li class="title list"><a href="./room.html?post_id=2" onclick="formChangeInput()"  routerLinkActive="active">내정보</a></li>
+           <li class="title list"><a href="./room.html" onclick="formChangeInput()"  routerLinkActive="active">내정보</a></li>
            <li class="title list"><a href="#" data-toggle="modal" data-target="#loginModal">설정</a></li>                   
            <li><a href="#" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Login</span></p></a>   </li>    
          </ul>
@@ -235,68 +216,3 @@
            
      </div>
    </div>
-  
-   <div id="modal2"  class="modal">
-      <div class="modal-content">
-          <h3>방에 참가하시겠습니까?</h3>
-          <div class="modal-footer">
-              <a id="wow" class="modal-action modal-close waves-effect waves-red btn-flat ">Disagree</a>
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-            </div>
-      </div>
-  </div>
-  
-  <!-- <div id="header_area" ></div> -->
-
-  <div class="card_area">
-    <div class="card_container">
-      <ul>
-
-      <div id="tree"></div>
-
-      </ul> 
-      <a id="room" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-    </div>
-  </div>
-
-  <footer>
-    <div class='pagination-container' >
-      <nav>
-        <ul class="pagination"></ul>
-      </nav>
-  </div>
-  
-  </footer>
-
- 
-</body>
-<script>
-var room_id;
-$(document).ready(function() {
-    $(document).on("click","#room",function() {
-      room_id=$(this).children('.card').children('dl').children('dd').children('.room_id').text();
-    });
-
-    $(document).on("click","#wow",function() {
-     location.replace("http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id);
-    });
-});
-
-</script>
-<script src="./assets/js/stylejs.js"></script>
-<script src="./assets/js/base.js"></script>
-<script>
-  // Get the modal
-$(document).ready(function(){
-  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-  $('.modal').modal();
-  console.log("123");
-});
-$('#modal1').modal('open');
-$('#modal1').modal('close');
-
-$('#modal2').modal('open');
-$('#modal2').modal('close');
-
-</script>
-</html>

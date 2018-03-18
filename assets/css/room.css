@@ -1,0 +1,13 @@
+.room_area {position: relative; top:99px; width:100%; }
+.room_area .room_container {position: relative; width: 700px; margin:0 auto; z-index:997;}
+
+table.room_info {border-collapse: collapse; line-height: 1.5; border-top: 1px solid #ccc; border-left: 3px solid #369; }
+table.room_info th { padding: 10px; font-weight: bold; vertical-align: top; color: #153d73; border: 1px solid #ccc; background: #f3f6f7;}
+table.room_info td { padding: 10px; vertical-align: top; border: 1px solid #ccc;}
+
+
+@media screen and (max-width:500px) {
+ .room_area {position: relative; top:99px; width:100%; background-color: #f7f7f7;}
+ .room_area .room_container {position: relative; width:calc(100%);  z-index:997;}
+}	
+  

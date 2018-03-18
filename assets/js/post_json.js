@@ -1,5 +1,4 @@
-
-    var data;
+ var data;
      $(document).ready(function () {
 	
     myurl='http://52.78.208.153/assets/php/print_room.php';
@@ -10,15 +9,15 @@
 			success: function (data) {
       var tree=$('#tree');
      
-      
-     
       $.each( data, function(index) {
-        var li = $("<li  class='filterDiv show'>").appendTo(tree);
+        var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(tree);
         var card = $("<div class='card'>").appendTo(li);
         var dl = $("<dl>").appendTo(card);
         var ddl = $(" <dd class='top-left'>").appendTo(dl);
+        var span_id=$("<span class='room_id'>").appendTo(ddl);
         var span_classify=$("<span class='classify'>").appendTo(ddl);
         var span_people=$("<span class='people'>").appendTo(ddl);
+        span_id.html(data[index][0]);
         span_classify.html("택시");
         span_people.html(" 1/"+data[index][6]);
         
@@ -119,3 +118,6 @@
       }
   });
 });
+
+
+

@@ -1,3 +1,5 @@
+
+
 <?php
 header('Access-Control-Allow-Origin: *');
  require_once './db.php';
@@ -16,3 +18,4 @@ header('Access-Control-Allow-Origin: *');
 echo json_encode($dbdata);
 
 ?>
+

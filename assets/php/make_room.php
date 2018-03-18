@@ -40,4 +40,5 @@ echo $room_start.','.$room_arrive.','.$room_date.','.$room_time.','.$room_popula
 
  $db->DBO();
 
+ echo "<script>location.replace('../../index.html');</script>";
   ?> 
