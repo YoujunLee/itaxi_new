@@ -57,7 +57,8 @@ myurl='http://52.78.208.153/assets/php/get_room.php?post_id='+$.urlParam('post_i
 
         var tbody=$('<tbody>').appendTo(table_participant);
   
-        $.each( data, function(index) {
+      
+        $.each( data[1], function(index) {
         var tr_tbody=$('<tr>').appendTo(tbody);
         
         var td_no=$('<td>').appendTo(tr_tbody);
