@@ -14,7 +14,7 @@
         var card = $("<div class='card'>").appendTo(li);
         var dl = $("<dl>").appendTo(card);
         var ddl = $(" <dd class='top-left'>").appendTo(dl);
-        var span_id=$("<span class='room_id'>").appendTo(ddl);
+        var span_id=$("<span class='room_id hide'>").appendTo(ddl);
         var span_classify=$("<span class='classify'>").appendTo(ddl);
         var span_people=$("<span class='people'>").appendTo(ddl);
         span_id.html(data[index][0]);
