@@ -19,7 +19,7 @@
         var span_people=$("<span class='people'>").appendTo(ddl);
         span_id.html(data[index][0]);
         span_classify.html("택시");
-        span_people.html(" 1/"+data[index][6]);
+        span_people.html(data[index][7]+"/"+data[index][6]);
         
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
         var span_date=$(" <span class='date'>").appendTo(ddr);
