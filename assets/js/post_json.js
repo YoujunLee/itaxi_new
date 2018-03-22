@@ -1,4 +1,5 @@
  var data;
+
      $(document).ready(function () {
 	
     myurl='http://52.78.208.153/assets/php/print_room.php';
@@ -81,7 +82,7 @@
         }
       
         });
-     
+        
 		  	$('.pagination').html('');
 		  	var trnum = 0 ;	
 		  	var maxRows = 12;
@@ -97,7 +98,8 @@
 			 if (totalRows > maxRows){						
 			 	var pagenum = Math.ceil(totalRows/maxRows);	
 			 	for (var i = 1; i <= pagenum ;){
-			 	$('.pagination').append('<li style="padding:0;" data-page="'+i+'">\
+   
+        $('.pagination').append('<li style="padding:0;" data-page="'+i+'">\
 								      <span>'+ i++ +'<span class="sr-only"></span></span>\
 								    </li>').show();
 			 	}											
