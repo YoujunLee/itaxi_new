@@ -16,15 +16,17 @@
         var dl = $("<dl>").appendTo(card);
         var ddl = $(" <dd class='top-left'>").appendTo(dl);
         var span_id=$("<span class='room_id hide'>").appendTo(ddl);
-        var span_classify=$("<span class='classify'>").appendTo(ddl);
-        var span_people=$("<span class='people'>").appendTo(ddl);
+        var span_classify=$("<span>").appendTo(ddl);
+        var span_date=$(" <span class='date'>").appendTo(ddl);
         span_id.html(data[index][0]);
-        span_classify.html("택시");
-        span_people.html(data[index][7]+"/"+data[index][6]);
+        span_classify.html("<i class='tiny material-icons'>local_taxi</i>");
+        span_date.html(" "+data[index][4])
+        
         
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
-        var span_date=$(" <span class='date'>").appendTo(ddr);
-        span_date.html(data[index][4])
+        var span_people=$("<span class='local_badge'>").appendTo(ddr);
+        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][7]+"/"+data[index][6]);
+        
         
         var hr = $("<hr>").appendTo(card);
 
