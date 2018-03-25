@@ -1,5 +1,5 @@
  var data;
-
+ var time;
      $(document).ready(function () {
 	
     myurl='http://52.78.208.153/assets/php/print_room.php';
@@ -21,12 +21,13 @@
         var span_date=$(" <span class='date'>").appendTo(ddl);
         span_id.html(data[index][0]);
         span_classify.html("<i class='tiny material-icons'>local_taxi</i>");
-        span_date.html(" "+data[index][4]+" "+data[index][5])
+        var time=data[index][4].substring(0,5);
+        span_date.html(" "+data[index][6]+" "+time)
         
         
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
         var span_people=$("<span class='local_badge'>").appendTo(ddr);
-        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][7]+"/"+data[index][6]);
+        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][7]+"/"+data[index][5]);
         
         
         var hr = $("<hr>").appendTo(card);
