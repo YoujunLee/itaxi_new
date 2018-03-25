@@ -24,6 +24,8 @@
  $room_population = $_POST['population'];
  $stu_id = '123';
 
+ $room_date=strtotime($room_date);
+
 echo $room_start.','.$room_arrive.','.$room_date.','.$room_time.','.$room_population.','.$stu_id.','.$post_id;
 
  $db->query = "INSERT INTO room VALUES ('".$post_id ."','".$stu_id."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."')";
@@ -40,5 +42,5 @@ echo $room_start.','.$room_arrive.','.$room_date.','.$room_time.','.$room_popula
 
  $db->DBO();
 
- echo "<script>location.replace('../../index.html');</script>";
+//  echo "<script>location.replace('../../index.html');</script>";
   ?> 

@@ -39,7 +39,7 @@
        <div id="departure" class= "row col s12">
          <div class="col s3"></div>
           <div class="input-field col s6">
-             <select id="departure_select" class="departure_select"name="departure">
+             <select id="departure_select" class="departure_select" name="departure">
                <option value="" disabled selected>출발지를 선택해주세요.</option>
                <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
                <option value="포항역">포항역</option>
@@ -50,7 +50,7 @@
                <option value="직접입력">직접입력</option>
              </select>
  
-             <input type="text" name="departure" class="departure_input hide" placeholder="출발지를 입력해주세요.">
+             
          </div>
          <div class="col s3"></div>
        </div>
@@ -68,9 +68,6 @@
                  <option value="육거리">육거리</option>
                  <option value="직접입력">직접입력</option>
                </select>
-       
-           <input type="text" name="arrival" class="arrival_input hide" placeholder="도착지를 입력해주세요.">
-       
            </div>
            <div class="col s3"></div>
          </div>
@@ -290,7 +287,6 @@ $(document).ready(function() {
 $(document).ready(function(){
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
-  console.log("123");
 });
 $('#modal1').modal('open');
 $('#modal1').modal('close');

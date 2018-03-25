@@ -8,7 +8,7 @@ require_once './db.php';
 
  $db = new DBC;
  $db->DBI();
- $db->query = "SELECT * FROM room";
+ $db->query = "SELECT * FROM room ";
  $db->DBQ();
 
  $db2 = new DBC;
@@ -22,9 +22,13 @@ require_once './db.php';
     array_push($data, $num);
 
     $dbdata[]=$data;
+    
+
  }
 
-echo json_encode($dbdata);
+ echo json_encode($dbdata);
+// echo date("Y-m-d", 1522527480);
+
 
 $db->DBO();
 $db2->DBO();

@@ -11,6 +11,7 @@
       var tree=$('#tree');
      
       $.each( data, function(index) {
+        console.log(data);
         var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(tree);
         var card = $("<div class='card'>").appendTo(li);
         var dl = $("<dl>").appendTo(card);
@@ -20,7 +21,7 @@
         var span_date=$(" <span class='date'>").appendTo(ddl);
         span_id.html(data[index][0]);
         span_classify.html("<i class='tiny material-icons'>local_taxi</i>");
-        span_date.html(" "+data[index][4])
+        span_date.html(" "+data[index][4]+" "+data[index][5])
         
         
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
@@ -91,7 +92,7 @@
         var totalRows = tree.children('li').length;
     
 			 $('#tree li').each(function(){	
-        console.log(tree.children('li').length);
+     
 			 	trnum++;				
 			 	if (trnum > maxRows ){		
 			 		$(this).hide();		

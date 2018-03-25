@@ -78,8 +78,9 @@ var value = $(this).val();
 console.log( $(this).parent().siblings().hasClass('departure_input'));
 
 if(value=="직접입력"){
-  $(this).parent('.departure_select').addClass('hide');
-  $(this).parent().siblings('.departure_input').removeClass('hide');
+  $(this).parent('.departure_select').replaceWith("<input type='text' name='departure' class='departure_input' placeholder='출발지를 입력해주세요.'>")
+  // $(this).parent('.departure_select').addClass('hide');
+  // $(this).parent().siblings('.departure_input').removeClass('hide');
 }
 });
 
@@ -87,8 +88,7 @@ $('#arrival_select').on('change', function() {
 var value = $(this).val();
 
 if(value=="직접입력"){
-  $(this).parent('.arrival_select').addClass('hide');
-  $(this).parent().siblings('.arrival_input').removeClass('hide');
+  $(this).parent('.arrival_select').replaceWith("<input type='text' name='arrival' class='arrival_input' placeholder='출발지를 입력해주세요.'>")
 }
 });
 
@@ -160,7 +160,6 @@ $('.timepicker').pickatime({
 $(document).ready(function(){
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
-  console.log("123");
 });
 $('#modal1').modal('open');
 $('#modal1').modal('close');
