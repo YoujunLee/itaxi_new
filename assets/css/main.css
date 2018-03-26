@@ -234,4 +234,5 @@ footer{position: fixed; z-index:999;bottom: 0; width:100%; height: 50px; padding
   -webkit-font-smoothing: antialiased;
 }
 
-.local_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #26a69a;border-radius: 2px;}
+.normal_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #26a69a;border-radius: 2px;}
+.full_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #E86B79; border-radius: 2px;}

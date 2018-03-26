@@ -12,7 +12,13 @@
      
       $.each( data, function(index) {
         console.log(data);
-        var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(tree);
+        
+        if(data[index][7]>=data[index][5])
+          var li = $("<li class='filterDiv show' id='room'>").appendTo(tree);
+      
+        else
+          var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(tree); //탑승 인원 덜 찬 방만 참여 가능
+        
         var card = $("<div class='card'>").appendTo(li);
         var dl = $("<dl>").appendTo(card);
         var ddl = $(" <dd class='top-left'>").appendTo(dl);
@@ -26,9 +32,11 @@
         
         
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
-        var span_people=$("<span class='local_badge'>").appendTo(ddr);
-        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][7]+"/"+data[index][5]);
-        
+        if(data[index][7]>=data[index][5])
+          var span_people=$("<span class='full_badge'>").appendTo(ddr);
+        else
+          var span_people=$("<span class='normal_badge'>").appendTo(ddr);
+        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][7]+"/"+data[index][5]);   
         
         var hr = $("<hr>").appendTo(card);
 
