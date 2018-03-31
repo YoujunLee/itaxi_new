@@ -1,8 +1,11 @@
+/*main page에서 사용되는 js*/
 
- $(document).ready(function(){
-  $("#header_area").load("./header.html"); 
-});
+/*header file load*/
+// $(document).ready(function(){
+//   $("#header_area").load("./header.html"); 
+// });
 
+/*main page filter dropdown 구현 (open & close)*/
 $(".dropdown dt a"+"#classify").on('click', function() {
 $(".dropdown dd ul"+"#classify").slideToggle('fast');
 $(this).parents().siblings('dd').addClass('open_classify');
@@ -18,6 +21,7 @@ $(".dropdown dd ul"+"#arrival").slideToggle('fast');
 $(this).parents().siblings('dd').addClass('open_arrival');
 });
 
+//해당 dropdown 영역 外 영역 click시 dropdown close
 $(document).bind('click', function(e) {
 var $clicked = $(e.target);
 if ($clicked.parents().hasClass("dropdown")){
@@ -37,7 +41,6 @@ if ($clicked.parents().hasClass("dropdown")){
     $(".dropdown dd ul"+"#classify").hide();
     $(".dropdown dd ul"+"#arrival").hide();
  }
-
 });
 
 $(".dropdown dd ul li a").on('click', function() {
@@ -51,9 +54,8 @@ return $("#" + id).find("dt a span.value").html();
 $('.mutliSelect input[type="radio"]').on('click', function(e) {
 
 var title = $(this).closest('.mutliSelect').find('input[type="radio"]').val(),
-  title = $(this).val();
+title = $(this).val();
 var $clicked = $(e.target);
-
 var $parent_target=$clicked.parents('.dropdown').children('dt').children('a').children('.multiSel');
 var $parent_hide=$clicked.parents('.dropdown').children('dt').children('a').children('.hida');
 
@@ -70,8 +72,7 @@ if ($(this).is(':checked')) {
 }
 });
 
-
-
+/*card 영역에 참가중인 방만 나타나는 것*/
 $('#change_post').on('click', function() {
   console.log("change");
   $(this).parent().siblings().children('#all_room').replaceWith("<div id='participate_room'></div>")
@@ -79,37 +80,26 @@ $('#change_post').on('click', function() {
  $('#return_post').show();
 });
 
+/*참가 중인 방만 나타나는 것에서 다시 전체 방 나타나기*/
 $('#return_post').on('click', function() {
   console.log("return");
   $(this).parent().siblings().children('#participate_room').replaceWith("<div id='all_room'></div>")
-  // $(this).replaceWith("<a id='return_post' class='btn-floating btn-large red pulse'><i class=material-icons>assignment_ind</i></a>")
   $('#return_post').hide();
   $('#change_post').show();
 });
 
-
-
-/*참가중인 방만 나타나는 것*/
-
-
-/*select를 input창으로 바꾸기*/
+/*방 등록 창에서 select를 input창으로 바꾸기*/
 $('#departure_select').on('change', function() {
 var value = $(this).val();
-console.log( $(this).parent().siblings().hasClass('departure_input'));
 
-if(value=="직접입력"){
+if(value=="직접입력")
   $(this).parent('.departure_select').replaceWith("<input type='text' name='departure' class='departure_input' placeholder='출발지를 입력해주세요.'>")
-  // $(this).parent('.departure_select').addClass('hide');
-  // $(this).parent().siblings('.departure_input').removeClass('hide');
-}
 });
 
 $('#arrival_select').on('change', function() {
 var value = $(this).val();
-
-if(value=="직접입력"){
+if(value=="직접입력")
   $(this).parent('.arrival_select').replaceWith("<input type='text' name='arrival' class='arrival_input' placeholder='출발지를 입력해주세요.'>")
-}
 });
 
 /*-----------------------------------------------------*/
@@ -151,6 +141,7 @@ for (i = 0; i < arr2.length; i++) {
 element.className = arr1.join(" ");
 }
 
+/*방 등록 창, datepicker*/
 $(document).ready(function() {
     $('select').material_select();
   });
@@ -164,6 +155,7 @@ $(document).ready(function() {
   closeOnSelect: false // Close upon selecting a date,
 });
 
+/*방 등록 창, timepicker*/
 $('.timepicker').pickatime({
   default: 'now', // Set default time: 'now', '1:30AM', '16:30'
   fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
@@ -175,14 +167,27 @@ $('.timepicker').pickatime({
   ampmclickable: true, // make AM PM clickable
   aftershow: function(){} //Function for after opening timepicker
 });
-/*----------------------------------*/
-// Get the modal
+
+/*modal(방등록, 방참여 confirm) 실행*/
 $(document).ready(function(){
-  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
   $('.modal').modal();
 });
+//modal1 = 방 등록
 $('#modal1').modal('open');
 $('#modal1').modal('close');
-
+//modal2 = 방 참여 confirm
 $('#modal2').modal('open');
 $('#modal2').modal('close');
+
+/*confirm 창 나타내고 해당 방으로 연결 짓는 부분 */
+var room_id;
+$(document).ready(function() {
+    $(document).on("click","#room",function() {
+      room_id=$(this).children('.card').children('dl').children('dd').children('.room_id').text();
+    });
+
+    $(document).on("click","#wow",function() {
+     location.replace("http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id);
+    });
+});
+

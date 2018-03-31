@@ -1,8 +1,8 @@
+/*index.html card영역에서 참가한 방만 보이게하기*/
 var data;
 var time;
 $(document).ready(function () {
 $('#change_post').on('click', function() { 
-  
    myurl='http://52.78.208.153/assets/php/participate_room.php';
        $.ajax({
            dataType: "json",
@@ -23,7 +23,6 @@ $('#change_post').on('click', function() {
        span_classify.html("<i class='tiny material-icons'>local_taxi</i>");
        var time=data[index][4].substring(0,5);
        span_date.html(" "+data[index][6]+" "+time)
-       
        
        var ddr = $(" <dd class='top-right'>").appendTo(dl);
        if(data[index][7]>=data[index][5])
@@ -89,43 +88,39 @@ $('#change_post').on('click', function() {
      
        });
        
-             $('.pagination').html('');
+      $('.pagination').html('');
        var trnum = 0 ;	
        var maxRows= 12;
-             var totalRows =participate_room.children('li').length;
-   
-            $('#participate_room li').each(function(){	
-    
-                trnum++;				
-                if (trnum > maxRows ){		
-                    $(this).hide();		
-                }if (trnum <= maxRows ){$(this).show();}
-            });										
-            if (totalRows > maxRows){						
-                var pagenum = Math.ceil(totalRows/maxRows);	
-                for (var i = 1; i <= pagenum ;){
-  
-       $('.pagination').append('<li style="padding:0;" data-page="'+i+'">\
-                                     <span>'+ i++ +'<span class="sr-only"></span></span>\
-                                   </li>').show();
-                }											
-           } 												
-           $('.pagination li:first-child').addClass('active');
-           $('.pagination li').on('click',function(){	
-               var pageNum = $(this).attr('data-page');
-               var trIndex = 0 ;						
-               $('.pagination li').removeClass('active');
-               $(this).addClass('active');				 
-               $('#participate_room li').each(function(){	
-                    trIndex++;	
-                    if (trIndex > (maxRows*pageNum) || trIndex <= ((maxRows*pageNum)-maxRows)){
-                        $(this).hide();		
-                    }else {$(this).show();} 				
-               }); 										
-      });	
-     }
- });
-});
+       var totalRows =participate_room.children('li').length;
+      $('#participate_room li').each(function(){	
+        trnum++;				
+        if (trnum > maxRows ){$(this).hide();}
+        if (trnum <= maxRows ){$(this).show();}
+      });										
+      if (totalRows > maxRows){						
+        var pagenum = Math.ceil(totalRows/maxRows);	
+        for (var i = 1; i <= pagenum ;){
+        $('.pagination').append('<li style="padding:0;" data-page="'+i+'">\
+                                 <span>'+ i++ +'<span class="sr-only"></span></span>\
+                                 </li>').show();
+          }											
+        } 												
+      $('.pagination li:first-child').addClass('active');
+      $('.pagination li').on('click',function(){	
+          var pageNum = $(this).attr('data-page');
+          var trIndex = 0 ;						
+          $('.pagination li').removeClass('active');
+          $(this).addClass('active');				 
+          $('#participate_room li').each(function(){	
+            trIndex++;	
+            if (trIndex > (maxRows*pageNum) || trIndex <= ((maxRows*pageNum)-maxRows)){
+              $(this).hide();}else{
+                $(this).show();} 				
+            }); 										
+         });	
+       }
+    });
+  });
 });
 
 

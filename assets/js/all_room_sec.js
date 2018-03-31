@@ -1,8 +1,7 @@
+ /*index.html에서 내가 참여한 방만 확인했다가, 다시 전체 확인 할 때 data 뿌려주는 js*/
  var data;
  var time;
-
-    $(document).ready(function () {
-      
+    $(document).ready(function () {    
     $('#return_post').on('click', function() { 
     myurl='http://52.78.208.153/assets/php/print_room.php';
     
@@ -14,13 +13,11 @@
       var all_room=$('#all_room');
      
       $.each( data, function(index) {
-       
-        
+        /*탑승 인원 초과 했는지 확인하는 조건문*/
         if(data[index][7]>=data[index][5])
           var li = $("<li class='filterDiv show' id='room'>").appendTo(all_room);
-      
         else
-          var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(all_room); //탑승 인원 덜 찬 방만 참여 가능
+          var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(all_room); 
         
         var card = $("<div class='card'>").appendTo(li);
         var dl = $("<dl>").appendTo(card);
@@ -33,8 +30,9 @@
         var time=data[index][4].substring(0,5);
         span_date.html(" "+data[index][6]+" "+time)
         
-        
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
+        
+        /*탑승 인원에 다른 badge색 변경 */
         if(data[index][7]>=data[index][5])
           var span_people=$("<span class='full_badge'>").appendTo(ddr);
         else
@@ -47,7 +45,8 @@
         var img=$("<img class='arrow' src='./assets/img/process.png' alt='화살표'>").appendTo(card_content);
         var departure=$("<p class='destination'>").appendTo(card_content);
         var arrival=$("<p class='destination'>").appendTo(card_content);
-     
+        
+        // 목적지에 대한 class를 추가 해줘야지, 나중에 main화면 filter에서 거를 수 있다. 
         /*departure*/
         if(data[index][2]=="한동대학교"){
           departure.parents('li').addClass('handong');
@@ -98,22 +97,21 @@
       
         });
         
+        /*pagination부분 코드*/
 		  	$('.pagination').html('');
         var trnum = 0 ;	
-        var maxRows= 12;
+        var maxRows= 12; // 여기 넣는 숫자 만큼 1page에 출력됨
 		  	var totalRows =all_room.children('li').length;
     
 			 $('#all_room li').each(function(){	
-     
 			 	trnum++;				
-			 	if (trnum > maxRows ){		
-			 		$(this).hide();		
-			 	}if (trnum <= maxRows ){$(this).show();}
-			 });										
+         if (trnum > maxRows ){$(this).hide();}
+         if (trnum <= maxRows ){$(this).show();}
+       });										
+       
 			 if (totalRows > maxRows){						
 			 	var pagenum = Math.ceil(totalRows/maxRows);	
 			 	for (var i = 1; i <= pagenum ;){
-   
         $('.pagination').append('<li style="padding:0;" data-page="'+i+'">\
 								      <span>'+ i++ +'<span class="sr-only"></span></span>\
 								    </li>').show();
@@ -135,7 +133,6 @@
       }
   });
 });
-
 });
 
 

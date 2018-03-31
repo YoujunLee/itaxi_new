@@ -1,4 +1,7 @@
+/*room.html에 방 정보 출력하는 js*/
 var data;
+
+/*넘어온 urlparm에서 post_id 값 읽어오기*/
 $.urlParam = function(name){
     var results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
     return results[1] || 0;
@@ -56,8 +59,8 @@ myurl='http://52.78.208.153/assets/php/get_room.php?post_id='+$.urlParam('post_i
         th_num.html("Phone");
 
         var tbody=$('<tbody>').appendTo(table_participant);
-  
-      
+        
+        /*참가자 출력하는 table 시작 부분*/
         $.each( data[1], function(index) {
         var tr_tbody=$('<tr>').appendTo(tbody);
         
@@ -69,7 +72,6 @@ myurl='http://52.78.208.153/assets/php/get_room.php?post_id='+$.urlParam('post_i
         td_id.html(data[1][index][1]);
         td_num.html(data[1][index][2]);
         });
-        
         }
     });
 });
