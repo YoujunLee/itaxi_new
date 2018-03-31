@@ -1,5 +1,3 @@
-
-
 <?php
 header('Access-Control-Allow-Origin: *');
 require_once './db.php';
@@ -38,4 +36,3 @@ require_once './db.php';
 $db->DBO();
 $db2->DBO();
 ?>
-
