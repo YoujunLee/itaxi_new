@@ -72,6 +72,26 @@ if ($(this).is(':checked')) {
 
 
 
+$('#change_post').on('click', function() {
+  console.log("change");
+  $(this).parent().siblings().children('#all_room').replaceWith("<div id='participate_room'></div>")
+ $('#change_post').hide();
+ $('#return_post').show();
+});
+
+$('#return_post').on('click', function() {
+  console.log("return");
+  $(this).parent().siblings().children('#participate_room').replaceWith("<div id='all_room'></div>")
+  // $(this).replaceWith("<a id='return_post' class='btn-floating btn-large red pulse'><i class=material-icons>assignment_ind</i></a>")
+  $('#return_post').hide();
+  $('#change_post').show();
+});
+
+
+
+/*참가중인 방만 나타나는 것*/
+
+
 /*select를 input창으로 바꾸기*/
 $('#departure_select').on('change', function() {
 var value = $(this).val();

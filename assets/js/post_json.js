@@ -1,23 +1,26 @@
  var data;
  var time;
-     $(document).ready(function () {
-	
+
+    $(document).ready(function () {
+      
+    $('#return_post').on('click', function() { 
     myurl='http://52.78.208.153/assets/php/print_room.php';
+    
 		$.ajax({
 			dataType: "json",
 			url: myurl,
 			data: data,
 			success: function (data) {
-      var tree=$('#tree');
+      var all_room=$('#all_room');
      
       $.each( data, function(index) {
-        console.log(data);
+       
         
         if(data[index][7]>=data[index][5])
-          var li = $("<li class='filterDiv show' id='room'>").appendTo(tree);
+          var li = $("<li class='filterDiv show' id='room'>").appendTo(all_room);
       
         else
-          var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(tree); //탑승 인원 덜 찬 방만 참여 가능
+          var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(all_room); //탑승 인원 덜 찬 방만 참여 가능
         
         var card = $("<div class='card'>").appendTo(li);
         var dl = $("<dl>").appendTo(card);
@@ -96,11 +99,11 @@
         });
         
 		  	$('.pagination').html('');
-		  	var trnum = 0 ;	
-		  	var maxRows = 12;
-        var totalRows = tree.children('li').length;
+        var trnum = 0 ;	
+        var maxRows= 12;
+		  	var totalRows =all_room.children('li').length;
     
-			 $('#tree li').each(function(){	
+			 $('#all_room li').each(function(){	
      
 			 	trnum++;				
 			 	if (trnum > maxRows ){		
@@ -122,7 +125,7 @@
 				var trIndex = 0 ;						
 				$('.pagination li').removeClass('active');
 				$(this).addClass('active');				 
-				$('#tree li').each(function(){	
+				$('#all_room li').each(function(){	
 				 	trIndex++;	
 				 	if (trIndex > (maxRows*pageNum) || trIndex <= ((maxRows*pageNum)-maxRows)){
 				 		$(this).hide();		
@@ -133,5 +136,6 @@
   });
 });
 
+});
 
 

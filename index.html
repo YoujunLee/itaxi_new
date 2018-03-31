@@ -13,6 +13,8 @@
     <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/materialize.js"></script>
     <script src="./assets/js/post_json.js"></script>
+    <script src="./assets/js/post_json2.js"></script>
+    <script src="./assets/js/participate_room.js"></script>
 </head>
 
 <body>
@@ -248,13 +250,17 @@
 
   <div class="card_area">
     <div class="card_container">
+      
       <ul>
-
-      <div id="tree"></div>
-
+       <div id="all_room"></div>
       </ul> 
       <div class="fixed-action-btn direction-bottom click-to-toggle " style="bottom: 60px; right: 24px;">
-        <a class="btn-floating btn-large red pulse">
+        <a id="change_post" class="btn-floating btn-large red">
+          <i class="material-icons">assignment_ind</i>
+        </a>
+      </div>
+      <div class="fixed-action-btn direction-bottom click-to-toggle " style="bottom: 60px; right: 24px;">
+        <a id="return_post" class="btn-floating btn-large blue" style="display:none">
           <i class="material-icons">assignment_ind</i>
         </a>
       </div>
