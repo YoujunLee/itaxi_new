@@ -179,15 +179,5 @@ $('#modal1').modal('close');
 $('#modal2').modal('open');
 $('#modal2').modal('close');
 
-/*confirm 창 나타내고 해당 방으로 연결 짓는 부분 */
-var room_id;
-$(document).ready(function() {
-    $(document).on("click","#room",function() {
-      room_id=$(this).children('.card').children('dl').children('dd').children('.room_id').text();
-    });
 
-    $(document).on("click","#wow",function() {
-     location.replace("http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id);
-    });
-});
 

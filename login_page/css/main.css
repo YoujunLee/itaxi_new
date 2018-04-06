@@ -92,9 +92,11 @@ input {
 	outline: none;
 	border: none;
 }
-input[type=text]:not(.browser-default):disabled{
+
+input[type=text]:not(.browser-default):read-only{
   color: lightgray;
 }
+
 textarea {
   outline: none;
   border: none;
