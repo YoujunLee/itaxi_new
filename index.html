@@ -1,302 +1,77 @@
-<!-- iTaxi Main Page -->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  	<title>iTaxi</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    
-    <link href="./assets/css/base.css" rel="stylesheet"> 
-    <link href="./assets/css/main.css" rel="stylesheet"> 
-    <link href="./assets/css/materialize.css" rel="stylesheet"> 
-
-    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/materialize.js"></script>
-
-    <script src="./assets/js/all_room_ini.js"></script>
-    <script src="./assets/js/all_room_sec.js"></script>
-    <script src="./assets/js/participate_room.js"></script>
-
+	<title>iTaxi</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./login_page/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./login_page/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./login_page/fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="./login_page/vendor/animate/animate.css">	
+	<link rel="stylesheet" type="text/css" href="./login_page/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="./ogin_page/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="./login_page/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="./login_page/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="./login_page/css/util.css">
+	<link rel="stylesheet" type="text/css" href="./login_page/css/main.css">
 </head>
-
 <body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form action="http://52.78.208.153/assets/php/login.php" method="post" class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+						Welcome To
+					</span>
+					<span class="login100-form-title p-b-48">
+						<img style="width:150px;" src="./assets/img/logo_big.png" alt="로고">
+					</span>
+			
 
-<!-- Car Pool 등록 화면 (Modal)-->
-<div id="modal1"  class="modal">
-    <div class="modal-content">
-     <h1>카풀 생성</h1>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" type="text" name="id">
+						<span class="focus-input100" data-placeholder="Hisnet ID"></span>
+					</div>
 
-     <form class="form" action="http://52.78.208.153/assets/php/make_room.php" method="post">
-      
-      <div id="classify" class= "row col s12">
-         <div class="col s3"></div>
-          <div id="class" class="col s6">
-           <div class="switch-field">
-             <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
-             <label for="switch_left">택시</label>
-             <input type="radio" id="switch_right" name="switch_2" value="no" />
-             <label for="switch_right">자차</label>
-           </div>
-         </div>
-         <div class="col s3"></div>
-       </div>
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Hisnet PW"></span>
+					</div>
 
-       <div id="departure" class= "row col s12">
-         <div class="col s3"></div>
-          <div class="input-field col s6">
-             <select id="departure_select" class="departure_select" name="departure">
-               <option value="" disabled selected>출발지를 선택해주세요.</option>
-               <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
-               <option value="포항역">포항역</option>
-               <option value="양덕">양덕</option>
-               <option value="양덕">고속버스터미널</option>
-               <option value="양덕">시외버스터미널</option>
-               <option value="육거리">육거리</option>
-               <option value="직접입력">직접입력</option>
-             </select>
-         </div>
-         <div class="col s3"></div>
-       </div>
- 
-       <div id="arrival" class= "row col s12">
-           <div class="col s3"></div>
-           <div class="input-field col s6">
-               <select id="arrival_select" class="arrival_select" name="arrival">
-                 <option value="" disabled selected>도착지를 선택해주세요.</option>
-                 <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
-                 <option value="포항역">포항역</option>
-                 <option value="양덕">양덕</option>
-                 <option value="양덕">고속버스터미널</option>
-                 <option value="양덕">시외버스터미널</option>
-                 <option value="육거리">육거리</option>
-                 <option value="직접입력">직접입력</option>
-               </select>
-           </div>
-           <div class="col s3"></div>
-        </div>
-         
-        <div id="date" class= "row col s12">
-           <div class="col s3"></div>
-           <div class="input-field col s6">
-               <input type="date" name="date" class="datepicker" placeholder="날짜를 선택해주세요.">
-           </div>
-           <div class="col s3"></div>
-        </div>
-        
-        <div id="time" class= "row col s12">
-            <div class="col s3"></div>
-            <div class="input-field col s6">
-                <input type="text" name="time" class="timepicker" placeholder="시간을 선택해주세요.">
-            </div>
-            <div class="col s3"></div>
-        </div>
-           
-        <div id="population" class= "row col s12">
-           <div class="col s3"></div>
-             <div class="input-field col s6">
-               <select name="population">
-                 <option value="" disabled selected>본인 포함 탑승 총원을 선택해주세요.</option>
-                 <option value="2">2명</option>
-                 <option value="3">3명</option>
-                 <option value="4">4명</option>
-                 <option value="5">5명</option>
-                 <option value="6">6명</option>
-                 <option value="7">7명</option>
-               </select>
-             </div>
-           <div class="col s3"></div>
-        </div>
-    
-        <div class= "row col s12">
-            <div class="col s3"></div>
-            <div class="col s6">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-            </div>
-        </div>
-        <div class="col s3"></div>
-      </div>
-    </form>
-  </div>
-</div>
- 
- <nav class="mobile float_sidebar">
-   <button class="btn_mobile_colse">&#9746;</button>
-    <ul>
-      <li><a href="story.html">story</a></li>
-      <li>
-         <h1><a  class="modal-trigger" href="#modal1">menu</a></h1>
-          <span><a  class="modal-trigger" href="#modal1">COFFEE</a></span>
-          <span><a href="menu_milktea_latte.html">MILK TEA &amp; LATTE</a></span>
-          <span><a href="menu_banaccino_smoothie.html">BANACCINO &amp; SMOOTHIE</a></span>
-          <span><a href="menu_tea_ade.html">TEA &amp; ADE</a></span>
-          <span><a href="menu_salad_bread.html">SALAD &amp; BREAD</a></span>
-      </li>
-      <li><a href="info.html">info.</a></li>
-      <li><a href="app.html" class="mobile_nav_off">app</a></li>
-    </ul>
- </nav>
- 
- <!-- header 영역-->  
- <header>
-     <div class="header_center">
-       <h1 class="Logo_group">
-         <ul class="texts">
-           <li><a href="./index.html"><img src="./assets/img/logo_big.png" alt="로고"></a></li>
-           <li class="explain">Handong Global Univ. Taxi Carpool Service</li>
-         </ul>
-       </h1>
-      
-       <nav>
-         <ul class="head_gnb">     
-           <li class="title list"><a class="modal-trigger" href="#modal1"  routerLinkActive="active">등록</a></li>
-           <li class="title list"><a href="./room.html?post_id=2" onclick="formChangeInput()"  routerLinkActive="active">내정보</a></li>
-           <li class="title list"><a href="./login.html" data-toggle="modal" data-target="#loginModal">설정</a></li>                   
-           <li><a href="./signup.html" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Login</span></p></a>   </li>    
-         </ul>
-         <button class="btn_mobile_nav">&#9866;<br/>&#9866;<br/>&#9866;</button>   
-         <button  class="modal-trigger" href="#modal1" >123</button>   
-       </nav>
-     </div>	       
- </header> 
- <!-- filter 영역-->
- <div class="container">
-     <div class="list_container">
-       
-       <div id="classify" class="title">  
-           <dl class="dropdown"> 
-             <dt>
-               <a id="classify" href="#">
-                 <span class="hida">구분</span>    
-                 <p class="multiSel"></p>  
-               </a>
-               </dt>
-             
-               <dd>
-                   <div class="mutliSelect">
-                       <ul id="classify">
-                           <li><label><input type="radio" name="classfy_radio" value="전체" checked/>택시+카풀</label></li>
-                           <li><label><input type="radio" name="classfy_radio" value="택시" />택시</label></li>
-                           <li><label><input type="radio" name="classfy_radio" value="카풀" />카풀</label></li>
-                       </ul>
-                   </div>
-               </dd>
-           </dl>    
-         </div>
- 
-         <div id="departure" class="title">  
-             <dl class="dropdown"> 
-               <dt>
-                 <a href="#" id="departure">
-                   <span class="hida">출발지</span>    
-                   <p class="multiSel"></p>  
-                 </a>
-                 </dt>
-               
-                 <dd>
-                     <div id="myBtnContainer" class="mutliSelect">
-                         <ul id="departure">
-                             <li><label><input type="radio" name="departure_radio" value="전체" checked/></label>전체</li>
-                             <li><label><input type="radio" name="departure_radio" value="한동대학교" />한동대학교</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="포항역" onclick="filterSelection('pohang')"/>포항역</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="양덕" />양덕</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="고속버스터미널" />고속터미널</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="시외버스터미널" />시외버스터미널</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="육거리" />육거리</label></li>
-                         </ul>
-                     </div>
-                 </dd>
-             </dl>    
-           </div>
- 
-           <div class="title">  
-             <dl class="dropdown"> 
-               <dt>
-                 <a href="#" id="arrival">
-                   <span class="hida">도착지</span>    
-                   <p class="multiSel"></p>  
-                 </a>
-                 </dt>
-               
-                 <dd>
-                     <div class="mutliSelect">
-                         <ul id="arrival">
-                           <li><label><input type="radio" name="arrival_radio" value="전체" checked/>전체</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="한동대학교" />한동대학교</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="포항역" />포항역</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="양덕" />양덕</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="고속버스터미널" />고속터미널</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="시외버스터미널" />시외버스터미널</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="육거리" />육거리</label></li>
-                         </ul>
-                     </div>
-                 </dd>
-             </dl>    
-           </div> 
-     </div>
-   </div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</div>
 
-  <!--card 선택시 방에 참가 여부 묻는 confirm 창 -->
-   <div id="modal2"  class="modal">
-      <div class="modal-content">
-          <h3>방에 참가하시겠습니까?</h3>
-          <div class="modal-footer">
-              <a id="wow" class="modal-action modal-close waves-effect waves-red btn-flat ">Disagree</a>
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-            </div>
-      </div>
-  </div>
+					<div class="text-center p-t-115">
+						<span class="txt1">
+						 Handong Global Univ. Carpool Service
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
 
-  <!-- card area-->
-  <div class="card_area">
-    <div class="card_container">
-      
-      <ul>
-       <div id="all_room"></div> <!--card나타나는 영역 'all_room_ini.js' file과 연동-->
-      </ul> 
+	<div id="dropDownSelect1"></div>
+	<script src="./login_page/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./login_page/vendor/animsition/js/animsition.min.js"></script>
+	<script src="./login_page/vendor/bootstrap/js/popper.js"></script>
+	<script src="./login_page/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./login_page/vendor/select2/select2.min.js"></script>
+	<script src="./login_page/vendor/daterangepicker/moment.min.js"></script>
+	<script src="./login_page/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="./login_page/vendor/countdowntime/countdowntime.js"></script>
+	<script src="./login_page/js/main.js"></script>
 
-      <!--내가 참가한 방만 보여지게 하는 btn-->
-      <div class="fixed-action-btn direction-bottom click-to-toggle " style="bottom: 60px; right: 24px;">
-        <a id="change_post" class="btn-floating btn-large red">
-          <i class="material-icons">assignment_ind</i>
-        </a>
-      </div>
-
-      <!--다시 전체방 보여지게 하는 btn-->
-      <div class="fixed-action-btn direction-bottom click-to-toggle " style="bottom: 60px; right: 24px;">
-        <a id="return_post" class="btn-floating btn-large blue" style="display:none">
-          <i class="material-icons">assignment_ind</i>
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
-    <div class='pagination-container' >
-      <nav>
-        <ul class="pagination"></ul>
-      </nav>
-  </div>
-  
-  </footer>
-
- 
 </body>
-<script>
-/*confirm 창 나타내고 해당 방으로 연결 짓는 부분 */
-var room_id;
-$(document).ready(function() {
-    $(document).on("click","#room",function() {
-      room_id=$(this).children('.card').children('dl').children('dd').children('.room_id').text();
-    });
-
-    $(document).on("click","#wow",function() {
-     location.replace("http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id);
-    });
-});
-</script>
-<script src="./assets/js/stylejs.js"></script>
-<script src="./assets/js/index.js"></script>
 </html>

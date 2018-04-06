@@ -27,7 +27,13 @@ if(!$db->result){
     $db->DBO();
     exit;	
 } 
+session_unset('id');
+session_unset('password');
 
- $db->DBO();
- echo "<script>location.replace('../../index.html');</script>"; // main  page로 이동
+$_SESSION['stu_id'] = $stu_id;
+$_SESSION['phone'] = $phone;
+$_SESSION['mail'] = $mail;
+
+$db->DBO();
+echo "<script>location.replace('../../main.html');</script>"; // main  page로 이동
 ?> 
