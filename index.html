@@ -74,4 +74,35 @@
 	<script src="./login_page/js/main.js"></script>
 
 </body>
+<script>
+//Cookie 확인
+function getCookie(name) {
+	var dc = document.cookie;
+	var prefix = name + "=";
+	var begin = dc.indexOf("; " + prefix);
+	if (begin == -1) {
+		begin = dc.indexOf(prefix);
+		if (begin != 0) return null;
+		}else{
+			begin += 2;
+			var end = document.cookie.indexOf(";", begin);
+			if (end == -1) {
+				end = dc.length;
+			}
+		}	
+	return decodeURI(dc.substring(begin + prefix.length, end));
+} 
+
+function doSomething() {
+	var myCookie = getCookie("stu_id");
+		
+	if (myCookie != null) {
+		location.replace("./main.html");
+	}
+}
+	
+$(document).ready(function() {			
+	doSomething();
+});
+</script>
 </html>

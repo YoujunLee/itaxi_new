@@ -275,12 +275,10 @@
       <nav>
         <ul class="pagination"></ul>
       </nav>
-  </div>
-  
+    </div>
   </footer>
-
- 
 </body>
+
 <script>
 //Cookie 확인
 function getCookie(name) {
@@ -317,7 +315,7 @@ $(document).ready(function() {
     });
 
     $(document).on("click","#wow",function() {
-     location.replace("http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id);
+     location.href="http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id;
     });
     
     doSomething();
