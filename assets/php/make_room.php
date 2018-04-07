@@ -45,7 +45,7 @@ $mail=$_COOKIE['mail'];
 
  $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."','".$phone."')";
  $db->DBQ();
- 
+
  if(!$db->result){
      echo "<script>alert('fail to posting.');</script>";
      $db->DBO();
@@ -53,5 +53,5 @@ $mail=$_COOKIE['mail'];
  } 
 
  $db->DBO();
- echo "<script>location.replace('../../index.html');</script>"; // main  page로 이동
+ echo "<script>location.replace('../../room.html?post_id=".$post_id."');</script>";
 ?> 

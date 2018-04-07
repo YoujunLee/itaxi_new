@@ -11,7 +11,7 @@
  header("Content-Type: text/html; charset=UTF-8");
  require_once './db.php';
 
- /*방에 들어가 있는 인원수 확인 */
+ /*room user table id 값 확인 */
  $db2 = new DBC; 
  $db2->DBI();
  $db2->query = "SELECT id FROM room_user ORDER BY id desc LIMIT 1"; 
@@ -24,14 +24,14 @@
    $id=1;
  
  $post_id = $_GET['post_id'];
- $stu_id = '21101002';
- $name= '이유준';
- $phone='010-4408-4262';
+ $stu_id=$_COOKIE['stu_id'];
+ $phone=$_COOKIE['phone'];
+ $mail=$_COOKIE['mail'];
 
  /*방에 참가 INSERT*/
  $db = new DBC; 
  $db->DBI();
- $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$name."', '".$phone."')";
+ $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."', '".$phone."')";
  $db->DBQ();
 
  if(!$db->result)

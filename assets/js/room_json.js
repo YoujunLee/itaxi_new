@@ -70,7 +70,7 @@ myurl='http://52.78.208.153/assets/php/get_room.php?post_id='+$.urlParam('post_i
 
         td_no.html(index);
         td_id.html(data[1][index][1]);
-        td_num.html(data[1][index][2]);
+        td_num.html(data[1][index][3]);
         });
         }
     });

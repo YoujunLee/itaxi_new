@@ -8,7 +8,7 @@ require_once './db.php';
  /*생성되어 있는 전체 방정보 가져오기 시간/날짜 순서로 */
  $db = new DBC;
  $db->DBI();
- $db->query = "SELECT id, stu_id, departure, arrival, time, population FROM room ORDER BY date, time";
+ $db->query = "SELECT id, departure, arrival, time, population FROM room ORDER BY date, time";
  $db->DBQ();
 
  $db2 = new DBC;

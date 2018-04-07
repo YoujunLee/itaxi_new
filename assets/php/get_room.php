@@ -21,7 +21,7 @@ $data= $db->result->fetch_row();
 /*방 참가자 정보 확인*/
 $db2 = new DBC;
 $db2->DBI();
-$db2->query= "SELECT id, stu_id, name, phone_num FROM room_user WHERE post_id='".$post_id."'";
+$db2->query= "SELECT id, stu_id, mail, phone_num FROM room_user WHERE post_id='".$post_id."'";
 $db2->DBQ();
 $num = $db2->result->num_rows;
 
