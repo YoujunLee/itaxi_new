@@ -26,7 +26,7 @@
      <h1>카풀 생성</h1>
 
      <form class="form" action="http://52.78.208.153/assets/php/make_room.php" method="post">
-      
+  
       <div id="classify" class= "row col s12">
          <div class="col s3"></div>
           <div id="class" class="col s6">
@@ -282,6 +282,33 @@
  
 </body>
 <script>
+//Cookie 확인
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    }else{
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+        end = dc.length;
+        }
+    }
+    return decodeURI(dc.substring(begin + prefix.length, end));
+} 
+
+function doSomething() {
+    var myCookie = getCookie("stu_id");
+
+    if (myCookie == null) {
+        alert("You have to login first");
+        location.replace("./index.html");
+    }
+}
+
 /*confirm 창 나타내고 해당 방으로 연결 짓는 부분 */
 var room_id;
 $(document).ready(function() {
@@ -292,6 +319,8 @@ $(document).ready(function() {
     $(document).on("click","#wow",function() {
      location.replace("http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id);
     });
+    
+    doSomething();
 });
 </script>
 <script src="./assets/js/stylejs.js"></script>

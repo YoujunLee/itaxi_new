@@ -30,9 +30,9 @@ if(!$db->result){
 session_unset('id');
 session_unset('password');
 
-$_SESSION['stu_id'] = $stu_id;
-$_SESSION['phone'] = $phone;
-$_SESSION['mail'] = $mail;
+setcookie("stu_id", $stu_id, time()+3600,'/'); 
+setcookie("phone", $phone, time()+3600,'/'); 
+setcookie("mail", $mail, time()+3600, '/'); 
 
 $db->DBO();
 echo "<script>location.replace('../../main.html');</script>"; // main  page로 이동
