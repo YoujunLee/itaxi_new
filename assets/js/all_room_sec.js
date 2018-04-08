@@ -27,17 +27,17 @@
         var span_date=$(" <span class='date'>").appendTo(ddl);
         span_id.html(data[index][0]);
         span_classify.html("<i class='tiny material-icons'>local_taxi</i>");
-        var time=data[index][4].substring(0,5);
-        span_date.html(" "+data[index][6]+" "+time)
+        var time=data[index][3].substring(0,5);
+        span_date.html(" "+data[index][5]+" "+time)
         
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
         
         /*탑승 인원에 다른 badge색 변경 */
-        if(data[index][7]>=data[index][5])
+        if(data[index][6]>=data[index][4])
           var span_people=$("<span class='full_badge'>").appendTo(ddr);
         else
           var span_people=$("<span class='normal_badge'>").appendTo(ddr);
-        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][7]+"/"+data[index][5]);   
+        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][6]+"/"+data[index][4]);   
         
         var hr = $("<hr>").appendTo(card);
 
@@ -48,51 +48,51 @@
         
         // 목적지에 대한 class를 추가 해줘야지, 나중에 main화면 filter에서 거를 수 있다. 
         /*departure*/
-        if(data[index][2]=="한동대학교"){
+        if(data[index][1]=="한동대학교"){
           departure.parents('li').addClass('handong');
-          departure.html("출발지: "+data[index][2]);
-        }else if(data[index][2]=="포항역"){
+          departure.html(data[index][1]);
+        }else if(data[index][1]=="포항역"){
           departure.parents('li').addClass('pohang');
-          departure.html("출발지: "+data[index][2]);
-        }else if(data[index][2]=="양덕"){
+          departure.html(data[index][1]);
+        }else if(data[index][1]=="양덕"){
           departure.parents('li').addClass('yangduck');
-          departure.html(data[index][2]);  
-        }else if(data[index][2]=="고속터미널"){
+          departure.html(data[index][1]);  
+        }else if(data[index][1]=="고속터미널"){
           departure.parents('li').addClass('express');
-          departure.html(data[index][2]);  
-        }else if(data[index][2]=="시외버스터미널"){
+          departure.html(data[index][1]);  
+        }else if(data[index][1]=="시외버스터미널"){
           departure.parents('li').addClass('side_express');
           departure.html(data[index][2]);  
-        }else if(data[index][2]=="육거리"){
+        }else if(data[index][1]=="육거리"){
           departure.parents('li').addClass('six_street');
-          departure.html(data[index][2]);  
+          departure.html(data[index][1]);  
         }else{
           departure.parents('li').addClass('etc');
-          departure.html(data[index][2]);  
+          departure.html(data[index][1]);  
         }
 
         /*arrival*/
-        if(data[index][3]=="한동대학교"){
+        if(data[index][2]=="한동대학교"){
           arrival.parents('li').addClass('handong');
-          arrival.html(data[index][3]);
-        }else if(data[index][3]=="포항역"){
+          arrival.html(data[index][2]);
+        }else if(data[index][2]=="포항역"){
           arrival.parents('li').addClass('pohang');
           arrival.html(data[index][3]);
-        }else if(data[index][3]=="양덕"){
+        }else if(data[index][2]=="양덕"){
           arrival.parents('li').addClass('yangduck');
-          arrival.html(data[index][3]);  
-        }else if(data[index][3]=="고속터미널"){
+          arrival.html(data[index][2]);  
+        }else if(data[index][2]=="고속터미널"){
           arrival.parents('li').addClass('express');
-          arrival.html(data[index][3]);  
-        }else if(data[index][3]=="시외버스터미널"){
+          arrival.html(data[index][2]);  
+        }else if(data[index][2]=="시외버스터미널"){
           arrival.parents('li').addClass('side_express');
-          arrival.html(data[index][3]);  
-        }else if(data[index][3]=="육거리"){
+          arrival.html(data[index][2]);  
+        }else if(data[index][2]=="육거리"){
           arrival.parents('li').addClass('six_street');
-          arrival.html(data[index][3]);  
+          arrival.html(data[index][2]);  
         }else{
           arrival.parents('li').addClass('etc');
-          arrival.html(data[index][3]);  
+          arrival.html(data[index][2]);  
         }
       
         });

@@ -14,7 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="./login_page/vendor/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="./login_page/css/util.css">
 	<link rel="stylesheet" type="text/css" href="./login_page/css/main.css">
+
 </head>
+
 <body>
 	
 	<div class="limiter">
@@ -27,7 +29,6 @@
 					<span class="login100-form-title p-b-48">
 						<img style="width:150px;" src="./assets/img/logo_big.png" alt="로고">
 					</span>
-			
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
 						<input class="input100" type="text" name="id">
@@ -75,34 +76,34 @@
 
 </body>
 <script>
-//Cookie 확인
-function getCookie(name) {
-	var dc = document.cookie;
-	var prefix = name + "=";
-	var begin = dc.indexOf("; " + prefix);
-	if (begin == -1) {
-		begin = dc.indexOf(prefix);
-		if (begin != 0) return null;
-		}else{
-			begin += 2;
-			var end = document.cookie.indexOf(";", begin);
-			if (end == -1) {
-				end = dc.length;
-			}
-		}	
-	return decodeURI(dc.substring(begin + prefix.length, end));
-} 
-
-function doSomething() {
-	var myCookie = getCookie("stu_id");
-		
-	if (myCookie != null) {
-		location.replace("./main.html");
-	}
-}
+	//Cookie 확인
+	function getCookie(name) {
+		var dc = document.cookie;
+		var prefix = name + "=";
+		var begin = dc.indexOf("; " + prefix);
+		if (begin == -1) {
+			begin = dc.indexOf(prefix);
+			if (begin != 0) return null;
+			}else{
+				begin += 2;
+				var end = document.cookie.indexOf(";", begin);
+				if (end == -1) {
+					end = dc.length;
+				}
+			}	
+		return decodeURI(dc.substring(begin + prefix.length, end));
+	} 
 	
-$(document).ready(function() {			
-	doSomething();
-});
-</script>
+	function doSomething() {
+		var myCookie = getCookie("stu_id");
+			
+		if (myCookie != null) {
+			location.replace("./main.html");
+		}
+	}
+		
+	$(function() {			
+		doSomething();
+	});
+	</script>
 </html>
