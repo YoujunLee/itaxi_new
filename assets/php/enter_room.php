@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-</head>
-<body>
  <?php
-/*방 참가하는 php*/
+ /*방 참가하는 php*/
+ 
+ use PHPMailer\PHPMailer\PHPMailer;
+ use PHPMailer\PHPMailer\Exception;
+ require '../../vendor/autoload.php';
 
  header('Access-Control-Allow-Origin: *');
  header("Content-Type: text/html; charset=UTF-8");
@@ -26,7 +24,7 @@
  $post_id = $_GET['post_id'];
  $stu_id=$_COOKIE['stu_id'];
  $phone=$_COOKIE['phone'];
- $mail=$_COOKIE['mail'];
+ $my_mail=$_COOKIE['mail'];
 
  $db2->query = "SELECT date, time FROM room WHERE id='".$post_id."'";
  $db2->DBQ();
@@ -41,7 +39,7 @@
  /*방에 참가 INSERT*/
  $db = new DBC; 
  $db->DBI();
- $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."', '".$phone."', '".$room_date."', '".$room_time."', '".$current_time."')";
+ $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."',1,'".$stu_id."','".$my_mail."', '".$phone."', '".$room_date."', '".$room_time."', '".$current_time."')";
  $db->DBQ();
 
  if(!$db->result)
@@ -51,10 +49,43 @@
      exit;	
  } 
 
+ $db2->query = "SELECT mail FROM room_user WHERE leader=0 AND post_id='".$post_id."'";
+ $db2->DBQ();
+ $data2 = $db2->result->fetch_row();
+ $leader_mail = $data2[0];
+
+ echo $leader_mail;
+ $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+ try {
+    //Server settings
+    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'injxyj@gmail.com';                 // SMTP username
+    $mail->Password = 'injxyj91';                           // SMTP password
+    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('injxyj@gmail.com', 'iTaxi Admin');
+    $mail->addAddress($leader_mail, 'iTaxi User');     // Add a recipient
+    $mail->addReplyTo('injxyj@gmail.com', 'No Reply');
+
+    $room_date= date("Y-m-d", $room_date);
+    //Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = '[iTaxi] New member is entered';
+    $mail->Body    = "New member is entered to your room which departure at ".$room_date." \n http://52.78.208.153/room.html?post_id=".$post_id."";
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+   // echo 'Message has been sent';
+  } catch (Exception $e) {
+   // echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+}
  $db->DBO();
  $db2->DBO();
 
  echo "<script>location.replace('../../room.html?post_id=".$post_id."');</script>";
-  ?> 
-  </body>
-</html>
+ ?> 

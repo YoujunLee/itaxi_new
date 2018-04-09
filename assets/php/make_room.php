@@ -46,7 +46,7 @@ $mail=$_COOKIE['mail'];
  $db->query = "INSERT INTO room VALUES ('".$post_id ."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."')";
  $db->DBQ();
 
- $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."','".$phone."', '".$room_date."', '".$room_time."', '".$current_time."')";
+ $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."',0,'".$stu_id."','".$mail."','".$phone."', '".$room_date."', '".$room_time."', '".$current_time."')";
  $db->DBQ();
 
  if(!$db->result){
