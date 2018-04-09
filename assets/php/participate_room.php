@@ -7,7 +7,7 @@ require_once './db.php';
  /*내가 참가한 방들 id 값 가져오기 */
  $db = new DBC;
  $db->DBI();
- $db->query = "SELECT post_id FROM room_user WHERE stu_id='".$stu_id."'";
+ $db->query = "SELECT post_id FROM room_user WHERE stu_id='".$stu_id."' ORDER BY room_date, room_time";
  $db->DBQ();
  /*방 정포 찾아오기*/
  $db2 = new DBC;
