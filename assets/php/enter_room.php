@@ -54,11 +54,10 @@
  $data2 = $db2->result->fetch_row();
  $leader_mail = $data2[0];
 
- echo $leader_mail;
  $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
  try {
     //Server settings
-    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
