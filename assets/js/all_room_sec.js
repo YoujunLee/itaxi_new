@@ -14,10 +14,12 @@
      
       $.each( data, function(index) {
         /*탑승 인원 초과 했는지 확인하는 조건문*/
-        if(data[index][7]>=data[index][5])
-          var li = $("<li class='filterDiv show' id='room'>").appendTo(all_room);
+        if(data[index][7]==1)
+         var li = $("<li class='filterDiv show' id='room' onclick='myroom("+data[index][0]+")'>").appendTo(all_room); 
+        else if(data[index][6]>=data[index][4])
+         var li = $("<li class='filterDiv show' id='room'>").appendTo(all_room);
         else
-          var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(all_room); 
+         var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(all_room); //탑승 인원 덜 찬 방만 참여 가능
         
         var card = $("<div class='card'>").appendTo(li);
         var dl = $("<dl>").appendTo(card);
@@ -33,7 +35,9 @@
         var ddr = $(" <dd class='top-right'>").appendTo(dl);
         
         /*탑승 인원에 다른 badge색 변경 */
-        if(data[index][6]>=data[index][4])
+        if(data[index][7]==1)
+          var span_people=$("<span class='participate_badge'>").appendTo(ddr);
+        else if(data[index][6]>=data[index][4])
           var span_people=$("<span class='full_badge'>").appendTo(ddr);
         else
           var span_people=$("<span class='normal_badge'>").appendTo(ddr);

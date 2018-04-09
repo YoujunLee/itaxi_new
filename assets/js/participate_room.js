@@ -12,7 +12,7 @@ $('#change_post').on('click', function() {
      var participate_room=$('#participate_room');
     
      $.each( data, function(index) {
-       var li = $("<li class='filterDiv show modal-trigger' id='room' data-toogle='modal' href='#modal2'>").appendTo(participate_room); //탑승 인원 덜 찬 방만 참여 가능    
+       var li = $("<li class='filterDiv show' id='room' onclick='myroom("+data[index][0]+")'>").appendTo(participate_room);  //탑승 인원 덜 찬 방만 참여 가능    
        var card = $("<div class='card'>").appendTo(li);
        var dl = $("<dl>").appendTo(card);
        var ddl = $(" <dd class='top-left'>").appendTo(dl);
@@ -25,10 +25,7 @@ $('#change_post').on('click', function() {
        span_date.html(" "+data[index][5]+" "+time)
        
        var ddr = $(" <dd class='top-right'>").appendTo(dl);
-       if(data[index][6]>=data[index][4])
-         var span_people=$("<span class='full_badge'>").appendTo(ddr);
-       else
-         var span_people=$("<span class='normal_badge'>").appendTo(ddr);
+       var span_people=$("<span class='participate_badge'>").appendTo(ddr);
        span_people.html("<i class='tiny material-icons'>person</i>"+data[index][6]+"/"+data[index][4]);   
        
        var hr = $("<hr>").appendTo(card);

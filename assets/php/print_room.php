@@ -4,6 +4,8 @@ header('Access-Control-Allow-Origin: *');
 require_once './db.php';
 
  $dbdata= array();
+
+ $stu_id=$_COOKIE['stu_id'];
  
  /*생성되어 있는 전체 방정보 가져오기 시간/날짜 순서로 */
  $db = new DBC;
@@ -23,6 +25,11 @@ require_once './db.php';
     $db2->DBQ();
     $num = $db2->result->num_rows;
 
+    /*내가 참여중인 방 확인*/
+    $db2->query = "SELECT * FROM room_user where post_id='".$data[0]."'AND stu_id='".$stu_id."'";
+    $db2->DBQ();
+    $num2 = $db2->result->num_rows;
+
     /*int 값으로 저장되어 있는 날짜정보, date 값으로 바꾸기 위해 Q빼오는 query*/
     $db3->query = "SELECT date FROM room where id='".$data[0]."'";
     $db3->DBQ();
@@ -31,6 +38,7 @@ require_once './db.php';
     
     array_push($data, $data2);
     array_push($data, $num);
+    array_push($data, $num2);
 
     $dbdata[]=$data;
  }

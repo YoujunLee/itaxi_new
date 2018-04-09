@@ -42,6 +42,7 @@ header nav button.btn_mobile_nav{display: none;}
 .list_container .title{cursor:pointer; position: relative; left: 0; line-height: 41px; margin-right: 20px; float: left;}
 .list_container .title .name{font-size: 13px; white-space: pre; color: #585858; }
 
+
 .card_area {position: relative; top:99px; width:100%; height:100%; overflow: scroll; }
 .card_area .card_container {position: relative; width: 1040px; margin:0 auto; z-index:997;}
 .card_area .card_container ul {width:100%;}
@@ -228,3 +229,4 @@ footer{position: fixed; z-index:999;bottom: 0; width:100%; height: 50px; padding
 
 .normal_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #26a69a;border-radius: 2px;}
 .full_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #E86B79; border-radius: 2px;}
+.participate_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #f0e68c; border-radius: 2px;}
