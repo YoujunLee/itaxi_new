@@ -27,9 +27,9 @@
 
      <form class="form" action="http://52.78.208.153/assets/php/make_room.php" method="post">
   
-      <div id="classify" class= "row col s12">
+      <!-- <div id="classify" class= "row col s12 m12">
          <div class="col s3"></div>
-          <div id="class" class="col s6">
+          <div id="class" class="col s6 m6">
            <div class="switch-field">
              <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
              <label for="switch_left">택시</label>
@@ -38,11 +38,11 @@
            </div>
          </div>
          <div class="col s3"></div>
-       </div>
+       </div> -->
 
-       <div id="departure" class= "row col s12">
-         <div class="col s3"></div>
-          <div class="input-field col s6">
+       <div id="departure" class= "row col s12 m12">
+         <div class="col m3"></div>
+          <div class="input-field col s12 m6">
              <select id="departure_select" class="departure_select" name="departure">
                <option value="" disabled selected>출발지를 선택해주세요.</option>
                <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
@@ -54,12 +54,12 @@
                <option value="직접입력">직접입력</option>
              </select>
          </div>
-         <div class="col s3"></div>
+         <div class="col m3 "></div>
        </div>
  
-       <div id="arrival" class= "row col s12">
-           <div class="col s3"></div>
-           <div class="input-field col s6">
+       <div id="arrival" class= "row col s12 m12">
+           <div class="col m3"></div>
+           <div class="input-field col s12 m6">
                <select id="arrival_select" class="arrival_select" name="arrival">
                  <option value="" disabled selected>도착지를 선택해주세요.</option>
                  <option value="한동대학교 택시승강장">한동대학교 택시승강장</option>
@@ -71,28 +71,28 @@
                  <option value="직접입력">직접입력</option>
                </select>
            </div>
-           <div class="col s3"></div>
+           <div class="col m3"></div>
         </div>
          
-        <div id="date" class= "row col s12">
-           <div class="col s3"></div>
-           <div class="input-field col s6">
+        <div id="date" class= "row col s12 m12">
+           <div class="col m3"></div>
+           <div class="input-field col s12 m6">
                <input type="date" name="date" class="datepicker" placeholder="날짜를 선택해주세요.">
            </div>
-           <div class="col s3"></div>
+           <div class="col m3"></div>
         </div>
         
-        <div id="time" class= "row col s12">
-            <div class="col s3"></div>
-            <div class="input-field col s6">
+        <div id="time" class= "row col s12 m12">
+            <div class="col m3"></div>
+            <div class="input-field col s12 m6">
                 <input type="text" name="time" class="timepicker" placeholder="시간을 선택해주세요.">
             </div>
-            <div class="col s3"></div>
+            <div class="col m3"></div>
         </div>
            
-        <div id="population" class= "row col s12">
-           <div class="col s3"></div>
-             <div class="input-field col s6">
+        <div id="population" class= "row col s12 m12">
+           <div class="col m3"></div>
+             <div class="input-field col s12 m6">
                <select name="population">
                  <option value="" disabled selected>본인 포함 탑승 총원을 선택해주세요.</option>
                  <option value="2">2명</option>
@@ -103,16 +103,16 @@
                  <option value="7">7명</option>
                </select>
              </div>
-           <div class="col s3"></div>
+           <div class="col m3"></div>
         </div>
     
-        <div class= "row col s12">
-            <div class="col s3"></div>
-            <div class="col s6">
+        <div class= "row col s12 m12">
+            <div class="col m3"></div>
+            <div class="col s12 m6">
                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
             </div>
+            <div class="col m3"></div>
         </div>
-        <div class="col s3"></div>
       </div>
     </form>
   </div>
@@ -306,7 +306,6 @@ function doSomething() {
         location.replace("./index.html");
     }
 }
-
 /*confirm 창 나타내고 해당 방으로 연결 짓는 부분 */
 var room_id;
 $(document).ready(function() {
