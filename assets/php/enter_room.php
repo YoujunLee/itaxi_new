@@ -22,16 +22,26 @@
    $id = $data1[0]+1;	
  else
    $id=1;
- 
+
  $post_id = $_GET['post_id'];
  $stu_id=$_COOKIE['stu_id'];
  $phone=$_COOKIE['phone'];
  $mail=$_COOKIE['mail'];
 
+ $db2->query = "SELECT date, time FROM room WHERE id='".$post_id."'";
+ $db2->DBQ();
+ $data2 = $db2->result->fetch_row();
+
+ $room_date=$data2[0];
+ $room_time=$data2[1];
+
+ date_default_timezone_set("Asia/Seoul");
+ $current_time = date("Y-m-d H:i:s");
+
  /*방에 참가 INSERT*/
  $db = new DBC; 
  $db->DBI();
- $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."', '".$phone."')";
+ $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."', '".$phone."', '".$room_date."', '".$room_time."', '".$current_time."')";
  $db->DBQ();
 
  if(!$db->result)

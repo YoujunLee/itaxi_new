@@ -39,11 +39,14 @@ $mail=$_COOKIE['mail'];
  else
    $id=1;
 
+ date_default_timezone_set("Asia/Seoul");
+ $current_time = date("Y-m-d H:i:s");
+
 /*방 생성하기*/
  $db->query = "INSERT INTO room VALUES ('".$post_id ."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."')";
  $db->DBQ();
 
- $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."','".$phone."')";
+ $db->query = "INSERT INTO room_user VALUES ('".$id."','".$post_id."','".$stu_id."','".$mail."','".$phone."', '".$room_date."', '".$room_time."', '".$current_time."')";
  $db->DBQ();
 
  if(!$db->result){
