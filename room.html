@@ -68,7 +68,7 @@
     
     <div style="text-align: center; margin-top: 20px;">
       <a href="./main.html" class="waves-effect waves-light btn teal darken-2"><i class="material-icons left">list</i>List</a>
-      <a class="waves-effect waves-light btn red darken-4"><i class="material-icons left">exit_to_app</i>EXIT</a>
+      <a id="exit" class="waves-effect waves-light btn red darken-4"><i class="material-icons left">exit_to_app</i>EXIT</a>
     </div>
     </div>
   </div>
@@ -76,4 +76,10 @@
 </body>
 <script src="./assets/js/stylejs.js"></script>
 <script src="./assets/jsindex.js"></script>
+<script>
+  var room_id=window.location.search;
+  $(document).on("click","#exit",function() {
+   location.href="./assets/php/exit.php"+room_id;
+  });
+</script>
 </html>
