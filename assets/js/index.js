@@ -93,13 +93,13 @@ $('#departure_select').on('change', function() {
 var value = $(this).val();
 
 if(value=="직접입력")
-  $(this).parent('.departure_select').replaceWith("<input type='text' name='departure' class='departure_input' placeholder='출발지를 입력해주세요.'>")
+  $(this).parent('.departure_select').replaceWith("<input type='text' name='departure' class='departure_input' placeholder='Input your departure'>")
 });
 
 $('#arrival_select').on('change', function() {
 var value = $(this).val();
 if(value=="직접입력")
-  $(this).parent('.arrival_select').replaceWith("<input type='text' name='arrival' class='arrival_input' placeholder='출발지를 입력해주세요.'>")
+  $(this).parent('.arrival_select').replaceWith("<input type='text' name='arrival' class='arrival_input' placeholder='input your arrival'>")
 });
 
 /*-----------------------------------------------------*/
