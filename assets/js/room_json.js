@@ -20,7 +20,7 @@ myurl='http://52.78.208.153/assets/php/get_room.php?post_id='+$.urlParam('post_i
         var tr_num=$("<tr>").appendTo(table);
         var th_num=$("<th scopte='row'>").appendTo(tr_num);
         var td_num=$("<td>").appendTo(tr_num);
-        th_num.html("No.");
+        th_num.html("Room No.");
         td_num.html(data[0]['id']);
 
         var tr_date=$("<tr>").appendTo(table);
