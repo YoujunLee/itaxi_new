@@ -30,10 +30,12 @@ while ($data=$db->result->fetch_row()){
   $db3->DBQ();
   $data3=$db3->result->fetch_row();
   $data3= date("Y-m-d", $data3[0]); // int 값 datq값으로 전환
+
   /*각 방에 참여한 인원수 나타내기*/
   $db4->query = "SELECT * FROM room_user where post_id='".$data[0]."'";
   $db4->DBQ();
-  $num = $db2->result->num_rows;
+  $num = $db4->result->num_rows;
+  
   array_push($data2, $data3);
   array_push($data2, $num);
   $dbdata[]=$data2;
