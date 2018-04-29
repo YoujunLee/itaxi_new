@@ -227,6 +227,6 @@ footer{position: fixed; z-index:999;bottom: 0; width:100%; height: 50px; padding
   -webkit-font-smoothing: antialiased;
 }
 
-.normal_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #26a69a;border-radius: 2px;}
-.full_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #E86B79; border-radius: 2px;}
+.normal_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #00796b;border-radius: 2px;}
+.full_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #b71c1c; border-radius: 2px;}
 .participate_badge{font-weight: 300; padding:3px; font-size: 0.8rem; color: #fff; background-color: #f0e68c; border-radius: 2px;}
