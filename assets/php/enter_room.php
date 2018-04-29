@@ -54,37 +54,39 @@
  $data2 = $db2->result->fetch_row();
  $leader_mail = $data2[0];
 
- $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
- try {
-    //Server settings
-    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'injxyj@gmail.com';                 // SMTP username
-    $mail->Password = 'injxyj91';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+ echo "<script>location.replace('../../room.html?post_id=".$post_id."');</script>";
 
-    //Recipients
-    $mail->setFrom('injxyj@gmail.com', 'iTaxi Admin');
-    $mail->addAddress($leader_mail, 'iTaxi User');     // Add a recipient
-    $mail->addReplyTo('injxyj@gmail.com', 'No Reply');
+//  $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+//  try {
+//     //Server settings
+//     $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+//     $mail->isSMTP();                                      // Set mailer to use SMTP
+//     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+//     $mail->SMTPAuth = true;                               // Enable SMTP authentication
+//     $mail->Username = 'injxyj@gmail.com';                 // SMTP username
+//     $mail->Password = 'injxyj91';                           // SMTP password
+//     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+//     $mail->Port = 587;                                    // TCP port to connect to
 
-    $room_date= date("Y-m-d", $room_date);
-    //Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = '[iTaxi] New member is entered';
-    $mail->Body    = "New member is entered to your room which departure at ".$room_date." \n http://52.78.208.153/room.html?post_id=".$post_id."";
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+//     //Recipients
+//     $mail->setFrom('injxyj@gmail.com', 'iTaxi Admin');
+//     $mail->addAddress($leader_mail, 'iTaxi User');     // Add a recipient
+//     $mail->addReplyTo('injxyj@gmail.com', 'No Reply');
 
-    $mail->send();
-   // echo 'Message has been sent';
-  } catch (Exception $e) {
-   // echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-}
+//     $room_date= date("Y-m-d", $room_date);
+//     //Content
+//     $mail->isHTML(true);                                  // Set email format to HTML
+//     $mail->Subject = '[iTaxi] New member is entered';
+//     $mail->Body    = "New member is entered to your room which departure at ".$room_date." \n http://52.78.208.153/room.html?post_id=".$post_id."";
+//     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+//     $mail->send();
+//    // echo 'Message has been sent';
+//   } catch (Exception $e) {
+//    // echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+// }
  $db->DBO();
  $db2->DBO();
 
- echo "<script>location.replace('../../room.html?post_id=".$post_id."');</script>";
+//  echo "<script>location.replace('../../room.html?post_id=".$post_id."');</script>";
  ?> 
