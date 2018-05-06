@@ -158,6 +158,8 @@ element.className = arr1.join(" ");
 /*방 등록 창, datepicker*/
 $(document).ready(function() {
     $('select').material_select();
+
+    
   });
 
   $('.datepicker').pickadate({
@@ -185,6 +187,7 @@ $('.timepicker').pickatime({
 /*modal(방등록, 방참여 confirm) 실행*/
 $(document).ready(function(){
   $('.modal').modal();
+  
 });
 //modal1 = 방 등록
 $('#modal1').modal('open');
