@@ -78,7 +78,21 @@ $('#change_post').on('click', function() {
   $(this).parent().siblings().children('#all_room').replaceWith("<div id='participate_room'></div>")
  $('#change_post').hide();
  $('#return_post').show();
+ $('#participate_title').show();
+ $('#all_title').hide();
 });
+
+/*참가 중인 방만 나타나는 것에서 다시 전체 방 나타나기*/
+$('#return_post').on('click', function() {
+  console.log("return");
+  $(this).parent().siblings().children('#participate_room').replaceWith("<div id='all_room'></div>")
+  $('#return_post').hide();
+  $('#change_post').show();
+  $('#participate_title').hide();
+  $('#all_title').show();
+});
+
+
 
 /*참가 중인 방만 나타나는 것에서 다시 전체 방 나타나기*/
 $('#return_post').on('click', function() {
