@@ -116,14 +116,6 @@ $('#change_post').on('click', function() {
             }); 										
          });	
        }
-       ,beforeSend:function(){
-        $('.wrap-loading').removeClass('display-none');
-    }
-    ,complete:function(){
-        $('.wrap-loading').addClass('display-none');
-    }
-
-
     });
   });
 });

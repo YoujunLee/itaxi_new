@@ -6807,7 +6807,7 @@ input[type=range]:focus::-ms-fill-upper {
   height: -moz-calc(100%);
   padding-bottom: 60px;
   background-color: #fff;
-  z-index: 999;
+  z-index: 99999;
   overflow-y: auto;
   will-change: transform;
   -webkit-backface-visibility: hidden;
@@ -6832,6 +6832,7 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav li {
   float: none;
   line-height: 48px;
+  color:black;
 }
 
 .side-nav li.active {

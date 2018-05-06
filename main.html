@@ -121,20 +121,34 @@
      <div class="header_center">
        <h1 class="Logo_group">
          <ul class="texts">
-           <li><a href="./main.html"><img src="./assets/img/logo_big.png" alt="로고"></a></li>
+           <li><a href="./main.html"><img class="logo" src="./assets/img/logo_big.png" alt="로고"></a></li>
            <li class="explain">Handong Global Univ. Taxi Carpool Service</li>
          </ul>
        </h1>
       
        <nav>
          <ul class="head_gnb">     
-           <li class="title list"><a class="modal-trigger" href="#modal1"  routerLinkActive="active">등록</a></li>
-           <li class="title list"><a href="./room.html?post_id=2" onclick="formChangeInput()"  routerLinkActive="active">내정보</a></li>
-           <li class="title list"><a href="./login.html" data-toggle="modal" data-target="#loginModal">설정</a></li>                   
-           <li><a href="./assets/php/logout.php" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Logout</span></p></a>   </li>    
-         </ul>
-         <button  class="modal-trigger" href="#modal1" >123</button>   
-       </nav>
+           <li class="title list pc"><a class="modal-trigger" href="#modal1"  routerLinkActive="active">Register</a></li>
+           <li class="title list pc"><a href="./room.html?post_id=2" onclick="formChangeInput()"  routerLinkActive="active">My Info.</a></li>                 
+           <li class="pc"><a href="./assets/php/logout.php" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Logout</span></p></a>   </li>    
+         </ul>  
+         <div id="mobile_menu" class="mobile_menu">
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="slide-out" class="side-nav">
+                <li><div class="user-view">
+                    <div class="background">
+                      <img src="./assets/img/handong.jpg">
+                    </div>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span id="menu_stu_id" class="white-text email"></span></a>
+                  </div></li>
+                <li class=""><a class="modal-trigger" href="#modal1"  routerLinkActive="active"><p> Register</p></a></li>
+                <li class=""><a href="./room.html?post_id=2" onclick="formChangeInput()"  routerLinkActive="active"><p>My Info.</p> </a></li>                 
+                <li class=""><a href="./assets/php/logout.php" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Logout</span></p></a>   
+              </li>         
+            </ul>
+        </div>
+      </nav>
      </div>	       
  </header> 
  <!-- filter 영역-->
@@ -217,10 +231,10 @@
   <!--card 선택시 방에 참가 여부 묻는 confirm 창 -->
    <div id="modal2"  class="modal">
       <div class="modal-content">
-          <h3>방에 참가하시겠습니까?</h3>
+          <h3>Are you gonna participate the room?<br>방에 참가하시겠습니까?</h3>
           <div class="modal-footer">
-              <a id="wow" class="modal-action modal-close waves-effect waves-red btn-flat ">Disagree</a>
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">No</a>
+              <a id="wow" class="modal-action modal-close waves-effect waves-red btn-flat ">Yes</a>
             </div>
       </div>
   </div>
@@ -276,6 +290,18 @@
 </body>
 
 <script>
+
+
+  $('.button-collapse').sideNav({
+      menuWidth: 200, // Default is 300
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+      onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened,
+      onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed,
+    }
+  );
+ 
 //Cookie 확인
 function getCookie(name) {
     var dc = document.cookie;
@@ -302,11 +328,21 @@ function doSomething() {
         location.replace("./index.html");
     }
 }
+
+ 
+ $(document).ready(function(){
+  var myCookie = getCookie("stu_id");
+  console.log(myCookie);
+  console.log("123");
+  $("#menu_stu_id").html(myCookie);
+
+})
 /*confirm 창 나타내고 해당 방으로 연결 짓는 부분 */
 var room_id;
 $(document).ready(function() {
     $(document).on("click","#room",function() {
       room_id=$(this).children('.card').children('dl').children('dd').children('.room_id').text();
+      
     });
 
     $(document).on("click","#wow",function() {
@@ -314,6 +350,7 @@ $(document).ready(function() {
     });
     
     doSomething();
+    
 });
 
 function myroom(id){
