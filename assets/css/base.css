@@ -3,6 +3,15 @@
 * { margin:0; padding:0; }
 html,body { font-family:'Nanum','malgun gothic',"돋움", dotum,  Tahoma, Arial, Verdana, Helvetica, AppleGothic, Sans-serif;}
 
+/*hiding scroll bar on chrome*/
+::-webkit-scrollbar { 
+    display: none; 
+}
+/*hiding scroll bar on edge*/
+html {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
 * html body { behavior:url(/css/csshover.htc); }
 
 #wrap{width:100%;}
