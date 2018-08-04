@@ -72,12 +72,13 @@
        </nav>
       </div>	       
   </header> 
-   
+ 
   <!-- <div id="header_area" name="header_area"></div> -->
   <div class="room_area">
     <div class="room_container">
 
     <div id="room_info"></div>
+    
     <div id="participant"></div>
     
     <div style="text-align: center; margin-top: 20px;">
@@ -86,7 +87,6 @@
     </div>
     </div>
   </div>
-
 </body>
 <script src="./assets/js/stylejs.js"></script>
 <script src="./assets/jsindex.js"></script>
@@ -100,7 +100,6 @@
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed,
     }
   );
-
   var room_id=window.location.search;
   $(document).on("click","#exit",function() {
    location.href="./assets/php/exit.php"+room_id;

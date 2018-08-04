@@ -67,10 +67,11 @@ myurl='./assets/php/get_room.php?post_id='+$.urlParam('post_id');
         var td_no=$('<td>').appendTo(tr_tbody);
         var td_id=$('<td>').appendTo(tr_tbody);
         var td_num=$('<td>').appendTo(tr_tbody);
-
+           
         td_no.html(index);
         td_id.html(data[1][index][1]);
-        td_num.html(data[1][index][3]);
+        td_num.html('<span class="phone_num">'+data[1][index][3]+'</span><a class="material-icons sms_num" href="tel:'+data[1][index][3]+'">call</a>&nbsp;&nbsp;&nbsp;<a class="material-icons sms_num" href="sms:'+data[1][index][3]+'">sms</a>');
+
         });
         }
     });
