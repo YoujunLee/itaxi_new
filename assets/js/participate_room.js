@@ -118,6 +118,7 @@ $('#change_post').on('click', function() {
        }
     });
   });
+ 
 });
 
 
