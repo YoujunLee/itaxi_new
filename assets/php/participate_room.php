@@ -1,7 +1,11 @@
 <?php
 /*내가 참가한 방들만 출력하는 php file */
 header('Access-Control-Allow-Origin: *');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;\
+require '../../vendor/autoload.php';
 require_once './db.php';
+
  $dbdata= array();
  $stu_id=$_COOKIE['stu_id'];
  /*내가 참가한 방들 id 값 가져오기 */

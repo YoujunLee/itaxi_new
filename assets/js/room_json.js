@@ -68,6 +68,7 @@ myurl='./assets/php/get_room.php?post_id='+$.urlParam('post_id');
         var td_id=$('<td>').appendTo(tr_tbody);
         var td_num=$('<td>').appendTo(tr_tbody);
         
+        /*방장일 경우 이모티콘 출력*/
         if(index==0)
         td_no.html('<i class="material-icons">stars</i>');
         else

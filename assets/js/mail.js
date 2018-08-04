@@ -3,6 +3,6 @@
  var time;
 
 $(document).ready(function () {
-    $.get("http://52.78.208.153/assets/php/mail.php");
+    // $.get("http://52.78.208.153/assets/php/mail.php");
 });
  
