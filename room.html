@@ -138,8 +138,8 @@
                      <div class="background">
                        <img src="./assets/img/handong.jpg">
                      </div>
-                     <a href="#!name"><span class="white-text name">John Doe</span></a>
-                     <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                     <a href="#!name"><span class="white-text name" id="menu_mail"></span></a>
+                     <a href="#!email"><span id="menu_stu_id" class="white-text email"></span></a>
                    </div></li>
                  <li class=""><a class="modal-trigger" href="#modal1"  routerLinkActive="active"><p> Register</p></a></li>
                  <li class=""><a href="./myinfo.html" onclick="formChangeInput()"  routerLinkActive="active"><p>My Info.</p> </a></li>                 
@@ -208,6 +208,8 @@
  
  $(document).ready(function(){
       doSomething();
+      var myCookie = getCookie("stu_id");
+    $("#menu_stu_id").html(myCookie+"님<br>Welcome");
   })
 
 </script>

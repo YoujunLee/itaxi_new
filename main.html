@@ -139,7 +139,7 @@
                     <div class="background">
                       <img src="./assets/img/handong.jpg">
                     </div>
-                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!name"><span class="white-text name" id="menu_mail"></span></a>
                     <a href="#!email"><span id="menu_stu_id" class="white-text email"></span></a>
                   </div></li>
                 <li class=""><a class="modal-trigger" href="#modal1"  routerLinkActive="active"><p> Register</p></a></li>
@@ -329,8 +329,7 @@ function doSomething() {
  
  $(document).ready(function(){
   var myCookie = getCookie("stu_id");
-  $("#menu_stu_id").html(myCookie);
-
+  $("#menu_stu_id").html(myCookie+"님<br>Welcome");
 })
 /*confirm 창 나타내고 해당 방으로 연결 짓는 부분 */
 var room_id;
