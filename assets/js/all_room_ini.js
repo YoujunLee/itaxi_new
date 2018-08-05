@@ -87,7 +87,7 @@ var time;
          arrival.parents('li').addClass('express_a');
          arrival.html(data[index][2]);  
        }else if(data[index][2]=="Cityside Bus Terminal (시터)"){
-         arrival.parents('li').addClass('side_express_a');
+         arrival.parents('li').addClass('side_a');
          arrival.html(data[index][2]);  
        }else if(data[index][2]=="Pohang Downtown (육거리)"){
          arrival.parents('li').addClass('six_street_a');

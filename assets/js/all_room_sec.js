@@ -77,25 +77,25 @@
 
         /*arrival*/
         if(data[index][2]=="한동대학교"){
-          arrival.parents('li').addClass('handong');
+          arrival.parents('li').addClass('handong_a');
           arrival.html(data[index][2]);
         }else if(data[index][2]=="포항역"){
-          arrival.parents('li').addClass('pohang');
+          arrival.parents('li').addClass('pohang_a');
           arrival.html(data[index][3]);
         }else if(data[index][2]=="양덕"){
-          arrival.parents('li').addClass('yangduck');
+          arrival.parents('li').addClass('yangduck_a');
           arrival.html(data[index][2]);  
         }else if(data[index][2]=="고속터미널"){
-          arrival.parents('li').addClass('express');
+          arrival.parents('li').addClass('express_a');
           arrival.html(data[index][2]);  
         }else if(data[index][2]=="시외버스터미널"){
-          arrival.parents('li').addClass('side_express');
+          arrival.parents('li').addClass('side_a');
           arrival.html(data[index][2]);  
         }else if(data[index][2]=="육거리"){
-          arrival.parents('li').addClass('six_street');
+          arrival.parents('li').addClass('six_street_a');
           arrival.html(data[index][2]);  
         }else{
-          arrival.parents('li').addClass('etc');
+          arrival.parents('li').addClass('etc_a');
           arrival.html(data[index][2]);  
         }
       
