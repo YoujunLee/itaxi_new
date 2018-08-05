@@ -3,6 +3,12 @@
 header('Access-Control-Allow-Origin: *');
 require_once './db.php';
 
+ date_default_timezone_set("Asia/Seoul");
+ $current_time2 = date("Y-m-d");
+ $current_time3 = date("H:i:s");
+ $current_time2=strtotime($current_time2);
+
+
  $dbdata= array();
 
  $stu_id=$_COOKIE['stu_id'];
@@ -10,7 +16,7 @@ require_once './db.php';
  /*생성되어 있는 전체 방정보 가져오기 시간/날짜 순서로 */
  $db = new DBC;
  $db->DBI();
- $db->query = "SELECT id, departure, arrival, time, population FROM room ORDER BY date, time";
+ $db->query = "SELECT id, departure, arrival, time, population FROM room WHERE date>'".$current_time2."' or date='".$current_time2."' and time>'".$current_time3."' ORDER BY date, time";
  $db->DBQ();
 
  $db2 = new DBC;
@@ -18,7 +24,7 @@ require_once './db.php';
 
  $db3 = new DBC;
  $db3->DBI();
- 
+
  while($data = $db->result->fetch_row()){
     /*각 방에 참여한 인원수 나타내기*/
     $db2->query = "SELECT * FROM room_user where post_id='".$data[0]."'";
