@@ -115,7 +115,11 @@ $('#change_post').on('click', function() {
                 $(this).show();} 				
             }); 										
          });	
-       }
+       } ,beforeSend:function(){
+        $('.wrap-loading').removeClass('display-none');
+    },complete:function(){
+        $('.wrap-loading').addClass('display-none');
+    }
     });
   });
  
