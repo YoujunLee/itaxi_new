@@ -32,7 +32,7 @@ header nav button.btn_mobile_nav{display: none;}
 .dropdown a,.dropdown a:visited {color: #000; text-decoration: none; outline: none;	font-size: 12px; }
 .dropdown dt a { display: block;padding: 8px 20px 5px 10px;min-height: 25px;line-height: 24px;overflow: hidden;border: 0;}
 .dropdown dt a span,.multiSel span {cursor: pointer;display: inline-block;padding: 0 3px 2px 0;}
-.dropdown dd ul {background-color: #fff; border: 0; color: #000; display: none; left: 0px; padding: 2px 15px 2px 5px; position: absolute;	top: 2px; width: 280px;	list-style: none; height: 100px; overflow: auto;}
+.dropdown dd ul {background-color: #fff; border: 0; color: #000; display: none; left: 0px; padding: 2px 15px 2px 5px; position: absolute;	top: 2px; width: 280px;	list-style: none; height: auto; overflow: auto;}
 .dropdown span.value { display: none; }
 .dropdown dd ul li a {padding: 5px; display: block;}
 .dropdown dd ul li a:hover {background-color: #fff;}

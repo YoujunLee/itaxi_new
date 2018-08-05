@@ -1,12 +1,3 @@
-<?php
-include "./php/session_out.php";
-out();
-?>
-<?php
-// Extend cookie life time by an amount of your liking
-$cookieLifetime = 365 * 24 * 60 * 60; // A year in seconds
-setcookie(session_name(),session_id(),time()+$cookieLifetime);
-?>
 <!-- iTaxi Main Page -->
 <!DOCTYPE html>
 <html>
@@ -138,7 +129,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
        <nav>
          <ul class="head_gnb">     
            <li class="title list pc"><a class="modal-trigger" href="#modal1"  routerLinkActive="active">Register</a></li>
-           <li class="title list pc"><a href="./room.html?post_id=2" onclick="formChangeInput()"  routerLinkActive="active">My Info.</a></li>                 
+           <li class="title list pc"><a href="./myinfo.html"  routerLinkActive="active">My Info.</a></li>                 
            <li class="pc"><a href="./assets/php/logout.php" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Logout</span></p></a>   </li>    
          </ul>  
          <div id="mobile_menu" class="mobile_menu">
@@ -152,7 +143,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
                     <a href="#!email"><span id="menu_stu_id" class="white-text email"></span></a>
                   </div></li>
                 <li class=""><a class="modal-trigger" href="#modal1"  routerLinkActive="active"><p> Register</p></a></li>
-                <li class=""><a href="./room.html?post_id=2" onclick="formChangeInput()"  routerLinkActive="active"><p>My Info.</p> </a></li>                 
+                <li class=""><a href="./myinfo.html" onclick="formChangeInput()"  routerLinkActive="active"><p>My Info.</p> </a></li>                 
                 <li class=""><a href="./assets/php/logout.php" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Logout</span></p></a>   
               </li>         
             </ul>
@@ -176,15 +167,15 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
                <dd>
                    <div class="mutliSelect">
                        <ul id="classify">
-                           <li><label><input type="radio" name="classfy_radio" value="전체" checked/>택시+카풀</label></li>
-                           <li><label><input type="radio" name="classfy_radio" value="택시" />택시</label></li>
-                           <li><label><input type="radio" name="classfy_radio" value="카풀" />카풀</label></li>
+                           <!-- <li><label><input type="radio" name="classfy_radio" value="전체" checked/>택시+카풀</label></li> -->
+                           <li><label><input type="radio" name="classfy_radio" value="택시" checked />택시</label></li>
+                           <li><label><input type="radio" name="classfy_radio" value="카풀" disabled/>카풀(제공 예정)</label></li>
                        </ul>
                    </div>
                </dd>
            </dl>    
          </div>
- 
+<!--  
          <div id="departure" class="title">  
              <dl class="dropdown"> 
                <dt>
@@ -197,18 +188,18 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
                  <dd>
                      <div id="myBtnContainer" class="mutliSelect">
                          <ul id="departure">
-                             <li><label><input type="radio" name="departure_radio" value="전체" checked/></label>전체</li>
-                             <li><label><input type="radio" name="departure_radio" value="한동대학교" />한동대학교</label></li>
+                             <li><label><input type="radio" name="departure_radio" value="전체" onclick="filterSelection('all')"/></label>전체</li>
+                             <li><label><input type="radio" name="departure_radio" value="한동대학교" onclick="filterSelection('handong')" />한동대학교</label></li>
                              <li><label><input type="radio" name="departure_radio" value="포항역" onclick="filterSelection('pohang')"/>포항역</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="양덕" />양덕</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="고속버스터미널" />고속터미널</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="시외버스터미널" />시외버스터미널</label></li>
-                             <li><label><input type="radio" name="departure_radio" value="육거리" />육거리</label></li>
+                             <li><label><input type="radio" name="departure_radio" value="양덕" onclick="filterSelection('yangduck')" />양덕</label></li>
+                             <li><label><input type="radio" name="departure_radio" value="고속버스터미널" onclick="filterSelection('express')" />고속터미널</label></li>
+                             <li><label><input type="radio" name="departure_radio" value="시외버스터미널" onclick="filterSelection('side_express')" />시외버스터미널</label></li>
+                             <li><label><input type="radio" name="departure_radio" value="육거리"  onclick="filterSelection('six_street')"/>육거리</label></li>
                          </ul>
                      </div>
                  </dd>
              </dl>    
-           </div>
+           </div> -->
  
            <div class="title">  
              <dl class="dropdown"> 
@@ -222,13 +213,13 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
                  <dd>
                      <div class="mutliSelect">
                          <ul id="arrival">
-                           <li><label><input type="radio" name="arrival_radio" value="전체" checked/>전체</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="한동대학교" />한동대학교</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="포항역" />포항역</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="양덕" />양덕</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="고속버스터미널" />고속터미널</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="시외버스터미널" />시외버스터미널</label></li>
-                           <li><label><input type="radio" name="arrival_radio" value="육거리" />육거리</label></li>
+                           <li><label><input type="radio" name="arrival_radio" value="전체" onclick="filterSelection('all')" />전체</label></li>
+                           <li><label><input type="radio" name="arrival_radio" value="한동대학교" onclick="filterSelection('handong')" />한동대학교</label></li>
+                           <li><label><input type="radio" name="arrival_radio" value="포항역" onclick="filterSelection('pohang_d')" />포항역</label></li>
+                           <li><label><input type="radio" name="arrival_radio" value="양덕" onclick="filterSelection('yangduk')"/>양덕</label></li>
+                           <li><label><input type="radio" name="arrival_radio" value="고속버스터미널" onclick="filterSelection('express')" />고속터미널</label></li>
+                           <li><label><input type="radio" name="arrival_radio" value="시외버스터미널" onclick="filterSelection('side_express')" />시외버스터미널</label></li>
+                           <li><label><input type="radio" name="arrival_radio" value="육거리" onclick="filterSelection('six_street')"/>육거리</label></li>
                          </ul>
                      </div>
                  </dd>

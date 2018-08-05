@@ -13,30 +13,12 @@
 
     <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/materialize.js"></script>
-    <script src="./assets/js/room_json.js"></script>
-    <script src="./assets/js/mail.js"></script>
+    <script src="./assets/js/myinfo.js"></script>
     <script src="./assets/js/stylejs.js"></script>
     <!-- 합쳐지고 최소화된 최신 CSS -->
   </head>
 
 <body>
- <nav class="mobile float_sidebar">
-    <button class="btn_mobile_colse">&#9746;</button>
-     <ul>
-       <li><a href="story.html">story</a></li>
-       <li>
-          <h1><a href="menu.html">menu</a></h1>
-           <span><a href="menu_coffee.html">COFFEE</a></span>
-           <span><a href="menu_milktea_latte.html">MILK TEA &amp; LATTE</a></span>
-           <span><a href="menu_banaccino_smoothie.html">BANACCINO &amp; SMOOTHIE</a></span>
-           <span><a href="menu_tea_ade.html">TEA &amp; ADE</a></span>
-           <span><a href="menu_salad_bread.html">SALAD &amp; BREAD</a></span>
-       </li>
-       <li><a href="info.html">info.</a></li>
-       <li><a href="app.html" class="mobile_nav_off">app</a></li>
-     </ul>
-  </nav>
-  
   <!-- header 영역-->  
   <header>
       <div class="header_center">
@@ -50,7 +32,7 @@
         <nav>
           <ul class="head_gnb">     
             <li class="title list pc"><a class="modal-trigger" href="#modal1"  routerLinkActive="active">Register</a></li>
-            <li class="title list pc"><a href="./myinfo.html" onclick="formChangeInput()"  routerLinkActive="active">My Info.</a></li>                 
+            <li class="title list pc"><a href="./myinfo.html"  routerLinkActive="active">My Info.</a></li>                 
             <li class="pc"><a href="./assets/php/logout.php" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Logout</span></p></a>   </li>    
           </ul>  
           <div id="mobile_menu" class="mobile_menu">
@@ -76,15 +58,8 @@
   <!-- <div id="header_area" name="header_area"></div> -->
   <div class="room_area">
     <div class="room_container">
+    <div id="information"></div>
 
-    <div id="room_info"></div>
-    
-    <div id="participant"></div>
-    
-    <div style="text-align: center; margin-top: 20px;">
-      <a href="./main.html" class="waves-effect waves-light btn teal darken-2"><i class="material-icons left">list</i>List</a>
-      <a id="exit" class="waves-effect waves-light btn red darken-4"><i class="material-icons left">exit_to_app</i>EXIT</a>
-    </div>
     </div>
   </div>
 </body>
@@ -98,10 +73,7 @@
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed,
     }
   );
-  var room_id=window.location.search;
-  $(document).on("click","#exit",function() {
-   location.href="./assets/php/exit.php"+room_id;
-  });
+
   function getCookie(name) {
       var dc = document.cookie;
       var prefix = name + "=";
