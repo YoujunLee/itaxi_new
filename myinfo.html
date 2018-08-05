@@ -19,6 +19,102 @@
   </head>
 
 <body>
+
+     <!-- Car Pool 등록 화면 (Modal)-->
+<div id="modal1"  class="modal">
+        <div class="modal-content">
+         <h1>카풀 생성</h1>
+    
+         <form class="form" action="http://52.78.208.153/assets/php/make_room.php" method="post">
+      
+          <!-- <div id="classify" class= "row col s12 m12">
+             <div class="col s3"></div>
+              <div id="class" class="col s6 m6">
+               <div class="switch-field">
+                 <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
+                 <label for="switch_left">택시</label>
+                 <input type="radio" id="switch_right" name="switch_2" value="no" />
+                 <label for="switch_right">자차</label>
+               </div>
+             </div>
+             <div class="col s3"></div>
+           </div> -->
+    
+           <div id="departure" class= "row col s12 m12">
+             <div class="col m3"></div>
+              <div class="input-field col s12 m6">
+                 <select id="departure_select" class="departure_select" name="departure">
+                   <option value="" disabled selected>Select your departure</option>
+                   <option value="HGU Taxi Station">HGU Taxi Station</option>
+                   <option value="Pohang Station (포항역)">Pohang Station (포항역)</option>
+                   <option value="Yangduk (양덕)">Yangduk (양덕)</option>
+                   <option value="Express Bus Terminal (고터)">Express Bus Terminal (고터)</option>
+                   <option value="Cityside Bus Terminal (시터)">Cityside Bus Terminal (시터)</option>
+                   <option value="Pohang Downtown (육거리)">Pohang Downtown (육거리)</option>
+                   <option value="직접입력">Direct input</option>
+                 </select>
+             </div>
+             <div class="col m3 "></div>
+           </div>
+     
+           <div id="arrival" class= "row col s12 m12">
+               <div class="col m3"></div>
+               <div class="input-field col s12 m6">
+                   <select id="arrival_select" class="arrival_select" name="arrival">
+                    <option value="" disabled selected>Select your arrival</option>
+                    <option value="HGU Taxi Station">HGU Taxi Station</option>
+                    <option value="Pohang Station (포항역)">Pohang Station (포항역)</option>
+                    <option value="Yangduk (양덕)">Yangduk (양덕)</option>
+                    <option value="Express Bus Terminal (고터)">Express Bus Terminal (고터)</option>
+                    <option value="Cityside Bus Terminal (시터)">Cityside Bus Terminal (시터)</option>
+                    <option value="Pohang Downtown (육거리)">Pohang Downtown (육거리)</option>
+                    <option value="직접입력">Direct input</option>
+                   </select>
+               </div>
+               <div class="col m3"></div>
+            </div>
+             
+            <div id="date" class= "row col s12 m12">
+               <div class="col m3"></div>
+               <div class="input-field col s12 m6">
+                   <input type="date" name="date" class="datepicker" placeholder="Select the departure date">
+               </div>
+               <div class="col m3"></div>
+            </div>
+            
+            <div id="time" class= "row col s12 m12">
+                <div class="col m3"></div>
+                <div class="input-field col s12 m6">
+                    <input type="text" name="time" class="timepicker" placeholder="Select the departure time">
+                </div>
+                <div class="col m3"></div>
+            </div>
+               
+            <div id="population" class= "row col s12 m12">
+               <div class="col m3"></div>
+                 <div class="input-field col s12 m6">
+                   <select name="population">
+                     <option value="" disabled selected>Select attendant with yourself</option>
+                     <option value="2">Two people</option>
+                     <option value="3">Three people</option>
+                     <option value="4">Four people</option>
+                     <option value="4" disabled>As the Korean law, maximum of taxi-attendate is four</option>
+                   </select>
+                 </div>
+               <div class="col m3"></div>
+            </div>
+        
+            <div class= "row col s12 m12">
+                <div class="col m3"></div>
+                <div class="col s12 m6">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                </div>
+                <div class="col m3"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div> 
   <!-- header 영역-->  
   <header>
       <div class="header_center">

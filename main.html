@@ -290,8 +290,6 @@
 </body>
 
 <script>
-
-
   $('.button-collapse').sideNav({
       menuWidth: 200, // Default is 300
       edge: 'right', // Choose the horizontal origin
@@ -328,12 +326,9 @@ function doSomething() {
         location.replace("./index.html");
     }
 }
-
  
  $(document).ready(function(){
   var myCookie = getCookie("stu_id");
-  console.log(myCookie);
-  console.log("123");
   $("#menu_stu_id").html(myCookie);
 
 })
@@ -344,13 +339,10 @@ $(document).ready(function() {
       room_id=$(this).children('.card').children('dl').children('dd').children('.room_id').text();
       
     });
-
     $(document).on("click","#wow",function() {
      location.href="http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id;
-    });
-    
+    });  
     doSomething();
-    
 });
 
 function myroom(id){
