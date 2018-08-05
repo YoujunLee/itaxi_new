@@ -51,6 +51,7 @@ $mail=$_COOKIE['mail'];
 
  if(!$db->result){
      echo "<script>alert('fail to posting.');</script>";
+     echo "<script>location.replace('../../index.html');</script>";
      $db->DBO();
      exit;	
  } 
