@@ -156,7 +156,7 @@ footer{position: fixed; z-index:999;bottom: 0; width:100%; height: 50px; padding
   .head_gnb li a:active{text-decoration:none; color:#fff;}
   .head_gnb li a:visited{text-decoration:none;}
 
-  .card_area {position: relative; top:99px; width:100%; background-color: #f7f7f7; height:100%; overflow: scroll;}
+  .card_area {position: relative; top:99px; width:100%; background-color: #f7f7f7; height:100%; overflow: scroll; margin-bottom:70px;}
   .card_area .card_container {position: relative; width:calc(100%);  z-index:997;}
   .card_area .card_container ul {width:100%;}
   .card_area .card_container li {width:100%; float:left;}
