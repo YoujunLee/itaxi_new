@@ -70,9 +70,9 @@ if (strlen($text1)<10){
         session_unset('id');
         session_unset('password');
 
-        setcookie("stu_id", $stu_id, time()+3600,'/'); 
-        setcookie("phone", $phone, time()+3600,'/'); 
-        setcookie("mail", $mail, time()+3600, '/'); 
+        setcookie("stu_id", $stu_id, time()+86400*365,'/'); 
+        setcookie("phone", $phone, time()+86400*365,'/'); 
+        setcookie("mail", $mail, time()+86400*365, '/'); 
    
         echo "<script>location.replace('../../main.html');</script>"; 
     }
