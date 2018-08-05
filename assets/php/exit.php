@@ -41,7 +41,10 @@ if($num==1){
     $data3 = $db3->result->fetch_row();
     $leader_mail = $data3[0];
 
-    $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+    
+
+echo "<script>location.replace('../../main.html');</script>"; // main  page로 이동
+$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
     try {
         //Server settings
         $mail->SMTPDebug = 2;                                 // Enable verbose debug output
@@ -70,9 +73,9 @@ if($num==1){
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
-}
 
+    
 $db->DBO();
 $db2->DBO();
-echo "<script>location.replace('../../main.html');</script>"; // main  page로 이동
+}
 ?> 
