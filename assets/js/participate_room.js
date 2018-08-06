@@ -10,7 +10,11 @@ $('#change_post').on('click', function() {
            data: data,
            success: function (data) {
      var participate_room=$('#participate_room');
-    
+     if(data[0]==null){
+       console.log("123");
+      var title=$("<h3 class='main_title' id='participate_title'>참여 중인 방이 없습니다.</h3>").appendTo(participate_room);
+     }else{
+       console.log("234");
      $.each( data, function(index) {
        var li = $("<li class='filterDiv show' id='room' onclick='myroom("+data[index][0]+")'>").appendTo(participate_room);  //탑승 인원 덜 찬 방만 참여 가능    
        var card = $("<div class='card'>").appendTo(li);
@@ -84,7 +88,7 @@ $('#change_post').on('click', function() {
        }
      
        });
-       
+      }
       $('.pagination').html('');
        var trnum = 0 ;	
        var maxRows= 12;

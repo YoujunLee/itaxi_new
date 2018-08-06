@@ -33,8 +33,6 @@ $stu_id=$_COOKIE['stu_id'];
 $phone=$_COOKIE['phone'];
 $mail=$_COOKIE['mail'];
 
-echo $room_date;
-
 echo $current_time2;
 if($room_date<$current_time2){
     echo "<script>alert('이미 지난 날짜입니다.');</script>";
