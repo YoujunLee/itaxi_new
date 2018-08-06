@@ -31,9 +31,9 @@ if(!$db->result){
 session_unset('id');
 session_unset('password');
 
-setcookie("stu_id", $stu_id, time()+ 86400*365,'/'); 
-setcookie("phone", $phone, time()+ 86400*365,'/'); 
-setcookie("mail", $mail, time()+ 86400*365, '/'); 
+setcookie("stu_id", $stu_id, time()+ 86400*1,'/'); 
+setcookie("phone", $phone, time()+ 86400*1,'/'); 
+setcookie("mail", $mail, time()+ 86400*1, '/'); 
 
 $db->DBO();
 echo "<script>location.replace('../../main.html');</script>"; // main  page로 이동
