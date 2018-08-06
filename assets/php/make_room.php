@@ -77,5 +77,5 @@ if($room_date<$current_time2){
  }
 
  $db->DBO();
-//  echo "<script>location.replace('../../room.html?post_id=".$post_id."');</script>";
+ echo "<script>location.replace('../../room.html?post_id=".$post_id."');</script>";
 ?> 

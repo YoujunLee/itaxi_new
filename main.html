@@ -287,7 +287,10 @@
 
     </div>
   </div>
-
+  <div id="page-loader">
+      <h1 class="main-title" style="color:#ffffff; margin-top:30%;">loading...</h1><br>
+      <h3 class="main-title" style="color:#ffffff;">Everything is possible for him who belives (Mark 9:23)</h3>
+  </div>
   <footer>
     <div class='pagination-container' >
       <nav>
@@ -347,6 +350,7 @@ $(document).ready(function() {
       
     });
     $(document).on("click","#wow",function() {
+     document.getElementById('page-loader').style.display='block';
      location.href="http://52.78.208.153/assets/php/enter_room.php?post_id="+room_id;
     });  
     doSomething();

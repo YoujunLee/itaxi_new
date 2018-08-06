@@ -13,7 +13,7 @@ var time;
      $.each( data, function(index) {
        /*탑승 인원 초과 했는지 확인하는 조건문*/
        if(data[index][7]==1)
-         var li = $("<li class='filterDiv show' id='room' onclick='myroom("+data[index][0]+")'>").appendTo(all_room); 
+         var li = $("<li class='filterDiv show' id='room' onclick='myroom("+data[index][0]+");'>").appendTo(all_room); 
        else if(data[index][6]>=data[index][4])
          var li = $("<li class='filterDiv show' id='room'>").appendTo(all_room);
        else

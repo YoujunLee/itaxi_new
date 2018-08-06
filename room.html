@@ -171,6 +171,10 @@
     </div>
     </div>
   </div>
+  <div id="page-loader">
+      <h1 class="main-title" style="color:#ffffff; margin-top:30%;">loading...</h1><br>
+      <h3 class="main-title" style="color:#ffffff;">Everything is possible for him who belives (Mark 9:23)</h3>
+  </div>
 </body>
 <script>
    $('.button-collapse').sideNav({
@@ -184,7 +188,8 @@
   );
   var room_id=window.location.search;
   $(document).on("click","#exit",function() {
-   location.href="./assets/php/exit.php"+room_id;
+    document.getElementById('page-loader').style.display='block';
+    location.href="./assets/php/exit.php"+room_id;
   });
   function getCookie(name) {
       var dc = document.cookie;
