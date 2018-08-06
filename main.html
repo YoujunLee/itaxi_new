@@ -2,9 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<title>iTaxi</title>
+    <title>iTaxi</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
     
     <link href="./assets/css/base.css?ver=1.1" rel="stylesheet"> 
     <link href="./assets/css/main.css" rel="stylesheet"> 
@@ -16,7 +18,6 @@
     <script src="./assets/js/all_room_ini.js"></script>
     <script src="./assets/js/all_room_sec.js"></script>
     <script src="./assets/js/participate_room.js"></script>
-
 </head>
 
 <body>
@@ -43,7 +44,7 @@
        <div id="departure" class= "row col s12 m12">
          <div class="col m3"></div>
           <div class="input-field col s12 m6">
-             <select id="departure_select" class="departure_select" name="departure">
+             <select id="departure_select" class="departure_select" name="departure" required>
                <option value="" disabled selected>Select your departure</option>
                <option value="HGU Taxi Station">HGU Taxi Station</option>
                <option value="Pohang Station (포항역)">Pohang Station (포항역)</option>
@@ -60,7 +61,7 @@
        <div id="arrival" class= "row col s12 m12">
            <div class="col m3"></div>
            <div class="input-field col s12 m6">
-               <select id="arrival_select" class="arrival_select" name="arrival">
+               <select id="arrival_select" class="arrival_select" name="arrival" required>
                 <option value="" disabled selected>Select your arrival</option>
                 <option value="HGU Taxi Station">HGU Taxi Station</option>
                 <option value="Pohang Station (포항역)">Pohang Station (포항역)</option>
@@ -77,7 +78,7 @@
         <div id="date" class= "row col s12 m12">
            <div class="col m3"></div>
            <div class="input-field col s12 m6">
-               <input type="date" name="date" class="datepicker" placeholder="Select the departure date">
+               <input type="date" name="date" class="datepicker" required placeholder="Select the departure date">
            </div>
            <div class="col m3"></div>
         </div>
@@ -85,7 +86,7 @@
         <div id="time" class= "row col s12 m12">
             <div class="col m3"></div>
             <div class="input-field col s12 m6">
-                <input type="text" name="time" class="timepicker" placeholder="Select the departure time">
+                <input type="text" name="time" class="timepicker" required placeholder="Select the departure time">
             </div>
             <div class="col m3"></div>
         </div>
@@ -93,7 +94,7 @@
         <div id="population" class= "row col s12 m12">
            <div class="col m3"></div>
              <div class="input-field col s12 m6">
-               <select name="population">
+               <select name="population" required>
                  <option value="" disabled selected>Select attendant with yourself</option>
                  <option value="2">Two people</option>
                  <option value="3">Three people</option>
@@ -144,8 +145,16 @@
                 <li class=""><a class="modal-trigger" href="#modal1"  routerLinkActive="active"><p> Register</p></a></li>
                 <li class=""><a href="./myinfo.html" onclick="formChangeInput()"  routerLinkActive="active"><p>My Info.</p> </a></li>                 
                 <li class=""><a href="./assets/php/logout.php" data-toggle="modal" data-target="#loginModal"><p class="my_login"><span class="myname">Logout</span></p></a>   
-              </li>         
+                  
+              </li>  
+              <br><br><hr><br>
+              <div style="bottom:0px;">  
+              <h4>&nbsp; launch by CRA</h4>
+              <h4>&nbsp; Dev. Contact: injxyj@gmail.com</h4>  
+              <h5>&nbsp;&nbsp; (class of 2011 Youjun Lee)</h5>   
+              </div>
             </ul>
+           
         </div>
       </nav>
      </div>	       
