@@ -80,7 +80,7 @@ if (strlen($text1)<10){
             setcookie("mail", $mail, time()+86400*1, '/'); 
         }
    
-        // echo "<script>location.replace('../../main.html');</script>"; 
+        echo "<script>location.replace('../../main.html');</script>"; 
     }
 }
 ?>

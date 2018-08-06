@@ -7,6 +7,7 @@ require '../../vendor/autoload.php';
 header('Access-Control-Allow-Origin: *');
 header("Content-Type: text/html; charset=UTF-8");
 require_once './db.php';
+require_once './admin_info.php';
 include "./session_out.php";
 out();
 
@@ -73,8 +74,8 @@ $mail = new PHPMailer(true);                              // Passing `true` enab
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'injxyj@gmail.com';                 // SMTP username
-        $mail->Password = 'injxyj91';                           // SMTP password
+        $mail->Username = $gmail_id;                 // SMTP username
+        $mail->Password = $gmail_pw;                           // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
 
