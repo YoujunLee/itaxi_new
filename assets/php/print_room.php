@@ -5,10 +5,9 @@ require_once './db.php';
 
  date_default_timezone_set("Asia/Seoul");
  $current_time2 = date("Y-m-d");
- $current_time3 = date("H:i:s");
+ $current_time3 = date("H:i");
  $current_time2=strtotime($current_time2);
- $current_time2+=105480;
-
+ $current_time2+=73080;
  $dbdata= array();
 
  $stu_id=$_COOKIE['stu_id'];
@@ -40,7 +39,6 @@ require_once './db.php';
     $db3->query = "SELECT date FROM room where id='".$data[0]."'";
     $db3->DBQ();
     $data2=$db3->result->fetch_row();
-    $data2[0]=$data2[0]-86400;
     $data2= date("Y-m-d", $data2[0]); // int 값 datq값으로 전환
     
     array_push($data, $data2);
