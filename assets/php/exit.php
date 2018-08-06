@@ -13,6 +13,24 @@ out();
 $stu_id=$_COOKIE['stu_id'];
 $post_id = $_GET['post_id'];
 
+date_default_timezone_set("Asia/Seoul");
+$current_time2 = date("Y-m-d");
+$current_time3 = date("H:i");
+$current_time2=strtotime($current_time2);
+$current_time2+=73080;
+
+$db5 = new DBC;
+$db5->DBI();
+$db5->query="SELECT date, time FROM room where id='".$post_id."'";
+$db5->DBQ();
+$data = $db5->result->fetch_row();
+if($data[0]==$current_time2 and $data[1]<$current_time3){
+    echo "<script>alert('시간이 지난 방은 나갈 수 없습니다.');</script>";
+    echo "<script>location.replace('../../main.html');</script>";
+    $db->DBO();
+    exit;	
+ }
+
 $db2 = new DBC;
 $db2->DBI();
 $db2->query = "SELECT * FROM room_user where post_id='".$post_id."'";
@@ -28,6 +46,10 @@ if($num==1){
 
     $db2->query="DELETE FROM room WHERE id='".$post_id."'";
     $db2->DBQ();
+
+    $db->DBO();
+    $db2->DBO();
+    $db5->DBO();
 }else{
     $db = new DBC;
     $db->DBI();
@@ -77,5 +99,6 @@ $mail = new PHPMailer(true);                              // Passing `true` enab
     
 $db->DBO();
 $db2->DBO();
+$db5->DBO();
 }
 ?> 
