@@ -7,7 +7,7 @@ require_once './db.php';
  $current_time2 = date("Y-m-d");
  $current_time3 = date("H:i:s");
  $current_time2=strtotime($current_time2);
-
+ $current_time2+=105480;
 
  $dbdata= array();
 

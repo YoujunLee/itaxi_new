@@ -22,7 +22,7 @@ $room_date = $_POST['date'];
 $room_time = $_POST['time'];
 $room_population = $_POST['population']; 
 $room_date=strtotime($room_date);
-
+$room_date = $room_date;
 $stu_id=$_COOKIE['stu_id'];
 $phone=$_COOKIE['phone'];
 $mail=$_COOKIE['mail'];
