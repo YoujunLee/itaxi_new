@@ -51,6 +51,8 @@ if($num==1){
     $db->DBO();
     $db2->DBO();
     $db5->DBO();
+echo "<script>location.replace('../../main.html');</script>"; // main  page로 이동
+
 }else{
     $db = new DBC;
     $db->DBI();
