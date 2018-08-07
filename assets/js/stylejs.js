@@ -9,7 +9,7 @@
 		$(".layout").height(winheight);
 		
 		// 페이지에 따른 gnb 생성
-		var pageindex = $("main > section").size();
+		var pageindex = $("main > section").length;
 		$("main").prepend("<div class='gnb'><ul>");
 		for(var i=1;i<=pageindex;i++){
 			$("main > .gnb > ul").append("<li><span>"+i+"</span></li>");

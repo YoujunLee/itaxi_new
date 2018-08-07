@@ -187,14 +187,14 @@ $('.timepicker').pickatime({
 /*modal(방등록, 방참여 confirm) 실행*/
 $(document).ready(function(){
   $('.modal').modal();
-  
+
+  //modal1 = 방 등록 confirm
+  $('#modal1').modal('open');
+  $('#modal1').modal('close');
+  //modal2 = 방 참여 confirm
+  $('#modal2').modal('open');
+  $('#modal2').modal('close');  
 });
-//modal1 = 방 등록
-$('#modal1').modal('open');
-$('#modal1').modal('close');
-//modal2 = 방 참여 confirm
-$('#modal2').modal('open');
-$('#modal2').modal('close');
 
 
 
