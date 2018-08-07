@@ -2,7 +2,7 @@
 var data;
 var time;
    $(document).ready(function () {
-   myurl=window.location.protocol + "//" + window.location.host + 'assets/php/print_room.php';
+   myurl=window.location.protocol + "//" + window.location.host + '/assets/php/print_room.php';
        $.ajax({
            dataType: "json",
            url: myurl,

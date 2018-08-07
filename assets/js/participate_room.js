@@ -3,7 +3,7 @@ var data;
 var time;
 $(document).ready(function () {
 $('#change_post').on('click', function() { 
-   myurl = window.location.protocol + '//' + window.location.host + "/assets/php/participate_room.php';
+   myurl = window.location.protocol + '//' + window.location.host + "/assets/php/participate_room.php";
        $.ajax({
            dataType: "json",
            url: myurl,
