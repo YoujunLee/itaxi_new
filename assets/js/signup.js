@@ -8,14 +8,12 @@ $(document).ready(function () {
            dataType: "json",
            url: myurl,
            data: data,
-              
            success: function (data) {
             var input_area=$('#input_area');
 
             var div_wrap_id=$("<div class='wrap-input100 validate-input'>").appendTo(input_area);
             var input_id=$("<input class='input100 readonly' type='text' name='hisnetid' value='"+data[0]+"' readonly required>").appendTo(div_wrap_id);
             var span_id=$("<span class='focus-input100' data-placeholder='Hisnet ID'>").appendTo(div_wrap_id);
-
 
             var div_wrap_stuid=$("<div class='wrap-input100 validate-input'>").appendTo(input_area);
             var input_stuid=$("<input class='input100' type='text' name='stuid' value='"+data[1]+"' readonly required>").appendTo(div_wrap_stuid);

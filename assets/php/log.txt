@@ -1,0 +1,3468 @@
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816104937">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816104937">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816104937">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816104937">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816104937">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816104937">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816104937">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816104937">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105011">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105011">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105011">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105011">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105011">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105011">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105011">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105011">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105505">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105505">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105505">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105505">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105505">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105505">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105505">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105505">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edulogin.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105740">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105740">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105740">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105740">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105741">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105741">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105741">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105741">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: ��õ��
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105913">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105913">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105913">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105913">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105913">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105913">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105913">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105913">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: 諛泥紐
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105950">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105950">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105950">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105950">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105951">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816105951">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816105951">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816105951">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edulogin.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110252">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816110252">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816110252">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110252">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110253">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816110253">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816110253">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110253">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edulogin.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110317">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816110317">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816110317">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110317">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110317">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816110317">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816110317">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110317">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: 諛泥紐
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110502">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816110502">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816110502">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110502">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110502">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816110502">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816110502">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816110502">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: 諛泥紐
+
+login.php, auth[id]: 21400071
+
+login.php, text1
+
+login.php, auth[id]: dojin1234
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400071">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400071">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="dojin1234">
+<input type="hidden" name=token value="20180816111007">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="dojin1234">
+<input type="hidden" name="token" value="20180816111007">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400071">
+<input type="hidden" name=token value="20180816111007">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="dojin1234">
+<input type="hidden" name=token value="20180816111007">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="KIM,DOJIN" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="02-491-7428" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-7471-7418" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="dojin1234@hanmail.net" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="02133">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="서울 중랑구 면목2동 면목한신아파트">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="1동 407호">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="02133">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="서울 중랑구 면목2동 면목한신아파트">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="9동 506호">
+<input type="hidden" name=hakbun value="21400071">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038288992245">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038263977187">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038230848370">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209824843">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:dojin1234
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400071">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400071">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="dojin1234">
+<input type="hidden" name=token value="20180816111007">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="dojin1234">
+<input type="hidden" name="token" value="20180816111007">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400071">
+<input type="hidden" name=token value="20180816111007">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="dojin1234">
+<input type="hidden" name=token value="20180816111007">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="KIM,DOJIN" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="02-491-7428" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-7471-7418" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="dojin1234@hanmail.net" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="02133">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="서울 중랑구 면목2동 면목한신아파트">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="1동 407호">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="02133">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="서울 중랑구 면목2동 면목한신아파트">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="9동 506호">
+<input type="hidden" name=hakbun value="21400071">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038288992245">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038263977187">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038230848370">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400071">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209824843">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: dojin123421400071KIM,DOJIN010-7471-7418dojin1234@hanmail.netsignup.php, hisnetid: dojin1234
+
+login.php, auth[id]: yunjiwoo20
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21600473">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21600473">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="yunjiwoo20">
+<input type="hidden" name=token value="20180816111407">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="yunjiwoo20">
+<input type="hidden" name="token" value="20180816111407">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21600473">
+<input type="hidden" name=token value="20180816111407">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="yunjiwoo20">
+<input type="hidden" name=token value="20180816111407">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="YUN,JIWOO" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="031-384-8955" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-8702-8955" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="yunjiwoo20@gmail.com" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="14044">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="경기 안양시 동안구 학의로 20 (비산동, 관악아파트)">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="112동 203호">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="14044">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="경기 안양시 동안구 학의로 20 (비산동, 관악아파트)">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="112동 203호">
+<input type="hidden" name=hakbun value="21600473">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21600473">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038291201865">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21600473">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038264969605">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21600473">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032244739857">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:yunjiwoo20
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21600473">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21600473">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="yunjiwoo20">
+<input type="hidden" name=token value="20180816111408">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="yunjiwoo20">
+<input type="hidden" name="token" value="20180816111408">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21600473">
+<input type="hidden" name=token value="20180816111408">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="yunjiwoo20">
+<input type="hidden" name=token value="20180816111408">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="YUN,JIWOO" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="031-384-8955" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-8702-8955" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="yunjiwoo20@gmail.com" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="14044">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="경기 안양시 동안구 학의로 20 (비산동, 관악아파트)">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="112동 203호">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="14044">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="경기 안양시 동안구 학의로 20 (비산동, 관악아파트)">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="112동 203호">
+<input type="hidden" name=hakbun value="21600473">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21600473">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038291201865">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21600473">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038264969605">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21600473">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032244739857">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: yunjiwoo2021600473YUN,JIWOO010-8702-8955yunjiwoo20@gmail.comsignup.php, hisnetid: yunjiwoo20
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816111701">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816111701">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816111701">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816111701">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816111701">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816111701">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816111701">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816111701">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: 諛泥紐
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112048">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816112048">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816112048">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112048">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112048">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816112048">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816112048">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112048">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: ��õ��
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112541">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816112541">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816112541">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112541">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112542">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816112542">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816112542">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112542">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: ��õ��
+
+signup.php, db_result: 
+
+login.php, auth[id]: ��õ��
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112721">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816112721">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816112721">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112721">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:��õ��
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21400337">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112721">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박천명">
+<input type="hidden" name="token" value="20180816112721">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21400337">
+<input type="hidden" name=token value="20180816112721">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박천명">
+<input type="hidden" name=token value="20180816112721">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,CHUN MYONG" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="051-207-6319" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-4147-1291" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="21400337@handong.edu" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="49394">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="부산 사하구 괴정1동">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="620-3번지 26/4반">
+<input type="hidden" name=hakbun value="21400337">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="7">
+<input type="hidden" name="cardnumber" value="4966038291116477">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="6">
+<input type="hidden" name="cardnumber" value="4966038258848583">
+</form>
+<form name="subform3" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="5">
+<input type="hidden" name="cardnumber" value="4966038257591218">
+</form>
+<form name="subform4" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="4">
+<input type="hidden" name="cardnumber" value="4966038257592620">
+</form>
+<form name="subform5" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="3">
+<input type="hidden" name="cardnumber" value="4966038241777022">
+</form>
+<form name="subform6" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038231603543">
+</form>
+<form name="subform7" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21400337">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032209822474">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ��õ��21400337PARK,CHUN MYONG010-4147-129121400337@handong.edusignup.php, hisnetid: 박천명
+
+login.php, auth[id]: ������
+
+login.php, text1<form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21500292">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21500292">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박종욱">
+<input type="hidden" name=token value="20180816113043">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박종욱">
+<input type="hidden" name="token" value="20180816113043">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21500292">
+<input type="hidden" name=token value="20180816113043">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박종욱">
+<input type="hidden" name=token value="20180816113043">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,JONGUK" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="052-245-0421" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-3562-0379" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="carlo12@naver.com" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="44539">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="울산 중구 종가4길 10 (유곡동, 우정혁신도시2차 동원로얄듀크)">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="206동 203호">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="44539">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="울산 중구 종가4길 10 (유곡동, 우정혁신도시2차 동원로얄듀크)">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="206동 203호">
+<input type="hidden" name=hakbun value="21500292">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21500292">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038255065561">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21500292">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032228667561">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+signup_info.php, auth[id]:������
+
+signup_info.php, text1: <form name = "qform3" action = "http://webmail.hgu.edu/SignUpForm.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21500292">
+</form>
+<form name = "qform4" action = "http://webmail.hgu.edu/GetGAppsID.aspx" method ="post" target = "_blank">
+<input type="hidden" name=idNum value="21500292">
+</form>
+<form name = "qform7"  method ="post" action="" target = "_blank">
+<input type="hidden" name=userid value="박종욱">
+<input type="hidden" name=token value="20180816113044">
+</form>
+<form name="qform8" method="post" action="">
+<input type="hidden" name="userid" value="박종욱">
+<input type="hidden" name="token" value="20180816113044">
+</form>
+<form name ="qform9"  method = "post" target = "_blank">
+<input type="hidden" name=usernum value="21500292">
+<input type="hidden" name=token value="20180816113044">
+</form>
+<form name ="qform10"  method = "post" target = "_blank">
+<input type="hidden" name=userid value="박종욱">
+<input type="hidden" name=token value="20180816113044">
+</form>
+<form action="HHAK110U.php" method="post" name="form1">
+<input type="hidden" name="true_check" value="0" >
+<input type="text" name="hakj_irum_eng" size="20" maxlength="40" value="PARK,JONGUK" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_tel" size="15" maxlength="20" value="052-245-0421" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_hak_pager" size="15" maxlength="15" value="010-3562-0379" style="border : solid 1 #BDC0CF">
+<input type="text" name="hakj_email" size="40" maxlength="40" value="carlo12@naver.com" style="border : solid 1 #BDC0CF">
+<input type="text" name = "zip1" id="zip1" placeholder="우편번호" readonly size="6" maxlength="6" value="44539">
+<input type="button" onclick="sub()" value="PostCode Search">
+<input type="text" id = "address1" placeholder="주소" name="address1" size="60" maxlength="100" value="울산 중구 종가4길 10 (유곡동, 우정혁신도시2차 동원로얄듀크)">
+<input type="text" id = "address2"  placeholder="상세주소" name="address2" size="60" maxlength="30" value="206동 203호">
+<input type="text" name = "bzip1" id="bzip1" placeholder="우편번호" readonly size="6" maxlength="6" value="44539">
+<input type="button" onclick="sub1()" value="PostCode Search">
+<input type="text" id = "baddress1" placeholder="주소" name="baddress1" size="60" maxlength="100" value="울산 중구 종가4길 10 (유곡동, 우정혁신도시2차 동원로얄듀크)">
+<input type="text" id = "baddress2"  placeholder="상세주소" name="baddress2" size="60" maxlength="30" value="206동 203호">
+<input type="hidden" name=hakbun value="21500292">
+</form>
+<form name="subform1" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21500292">
+<input type="hidden" name="reg_count" value="2">
+<input type="hidden" name="cardnumber" value="4966038255065561">
+<input type="button" value="푸드포인트">
+<input type="button" value="카드 분실">
+<input type="button" value="생활관출입" onClick="onalc();">
+<input type="button" value="푸드포인트">
+<input type="button" value="생활관출입" onClick="onalc();">
+</form>
+<form name="subform2" method="post" action="students_ok.php">
+<input type="hidden" name="dbn" value="hsdb">
+<input type="hidden" name="hakbun" value="21500292">
+<input type="hidden" name="reg_count" value="1">
+<input type="hidden" name="cardnumber" value="4966032228667561">
+</form>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="newWin( this.value );">
+<option VALUE="" selected="selected">Related Sites | 관련사이트
+</option>
+        <!-- 경력개발팀 신규 서비스 관리자페이지 연결 : 주병창(joo), 김나영(kny), 김정직(dirkpitt121), 김인탁(zzortea), 이다솜(som0702), 김태영(steven17), 컨설턴트 5명(career1,career2,career3,career4,career5) -->
+        					
+<option VALUE="http://han.certpia.com/">인터넷증명발급센터
+</option>
+					
+<option VALUE="http://club.cyworld.com/icservices">OICA
+</option>
+					
+<option VALUE="https://hised.handong.edu">한동교육개발센터
+</option>
+											
+</select>
+<select style="font-size:11px;width:170px;height:17px;" OnChange="goBoard(this.value);">
+<option VALUE="" selected="selected">선택
+</option>
+				
+<option VALUE="B0408">연구 관련 게시판
+</option>
+
+		
+</select>
+
+sign_up_info.php arrays: ������21500292PARK,JONGUK010-3562-0379carlo12@naver.comsignup.php, hisnetid: 박종욱
+

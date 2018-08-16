@@ -1,7 +1,9 @@
-<?php
+﻿<?php
  /*회원 가입하기 위해 hisnet 정보 json으로 반환하는 php file*/
 header('Access-Control-Allow-Origin: *');
 header("Content-Type: text/html; charset=UTF-8");
+
+
 include('./Snoopy.class.php');
 
 include "./session_out.php";
@@ -15,8 +17,9 @@ $mail=array();
 $result=array();
 
 /* login session value 이용하여 hisnet 접속*/
-$auth['id'] =$_SESSION['id'];
+$auth['id'] = $_SESSION['id'];
 $auth['password'] = $_SESSION['password'];
+
 
 $uri=("https://hisnet.handong.edu/login/_login.php");
 
@@ -27,6 +30,9 @@ $snoopy->fetch('https://hisnet.handong.edu/haksa/hakjuk/HHAK110M.php');
 $text =  $snoopy->results;
 
 $text1=(string)$snoopy ->_stripform($text);
+$text1 = iconv("euc-kr", "UTF-8", $text1);
+
+
 /*이름 저장*/
 $usr_name_start_point = strpos($text1, 'hakj_irum_eng') + 47;
 $usr_name_end_point= strpos($text1, 'hakj_hak_tel')-63;
@@ -53,7 +59,7 @@ for($i=$usr_email_start_point; $i<=$usr_email_end_point; $i++)
     array_push($mail, $text1[$i]);
 $mail=implode($mail);
 
-array_push($result, $auth['id']);
+array_push($result, iconv("euc-kr", "UTF-8", $auth['id']));
 array_push($result, $stu_id);
 array_push($result, $name);
 array_push($result, $phone);

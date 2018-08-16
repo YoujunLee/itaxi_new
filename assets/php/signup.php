@@ -10,6 +10,8 @@ $db = new DBC;
 $db->DBI();
 
 $hisnet_id=$_POST['hisnetid'];
+error_log("signup.php, hisnetid: ".$hisnet_id."\n\n", 3, "./log.txt"); 
+
 $stu_id=$_POST['stuid'];
 $name=$_POST['name'];
 $phone=$_POST['phone'];
@@ -23,6 +25,9 @@ $db->query = "INSERT INTO user VALUES ('".$hisnet_id."','".$stu_id."','".$name."
 $db->DBQ();
 
 if(!$db->result){
+
+    error_log("signup.php, db_result: ".$db->result."\n\n", 3, "./log.txt");
+
     echo "<script>alert('fail to posting.');</script>";
     echo "<script>location.replace('../../index.html');</script>";
     $db->DBO();

@@ -1,6 +1,6 @@
-<?php
+﻿<?php
  header('Access-Control-Allow-Origin: *');
- header("Content-Type: text/html; charset=UTF-8");
+ header("Content-Type: text/html; charset=euc-kr");
  include('./Snoopy.class.php');
  require_once './db.php';
 
@@ -13,8 +13,8 @@ $phone=array();
 $mail=array();
 $result=array();
 
-$auth['id'] = $_POST['id'];
-$auth['password'] = $_POST['password'];
+$auth['id'] = iconv("UTF-8", "euc-kr", $_POST['id']);
+$auth['password'] = iconv("UTF-8", "euc-kr", $_POST['password']);
 
 $db = new DBC;
 $db->DBI();
@@ -31,6 +31,7 @@ $snoopy->fetch('https://hisnet.handong.edu/haksa/hakjuk/HHAK110M.php');
 $text =  $snoopy->results;
 
 $text1=(string)$snoopy ->_stripform($text);
+$text1 = iconv("euc-kr", "UTF-8", $text1);
 
 if (strlen($text1)<10){
     echo "<script>alert('Check Your Hisnet ID');</script>"; 
