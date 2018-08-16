@@ -48,12 +48,8 @@ $snoopy->fetch('https://hisnet.handong.edu/haksa/hakjuk/HHAK110M.php');
 $text =  $snoopy->results;
 
 $text1=(string)$snoopy ->_stripform($text);
-error_log("**********num".$num."\n\n", 3, "./log.txt");
 
 $text1 = iconv("euc-kr", "UTF-8", $text1);
-
-error_log("after encoding".$text1."\n\n", 3, "./log.txt");
-
 
 if (strlen($text1)<10){
     echo "<script>alert('Check Your Hisnet ID');</script>"; 
